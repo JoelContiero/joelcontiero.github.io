@@ -495,8 +495,16 @@
             content: '';
             position: absolute;
             left: 0; top: 0; bottom: 0;
-            width: 1px;
-            background: linear-gradient(to bottom, var(--blue), transparent);
+            width: 2px;
+            border-radius: 2px;
+            background: linear-gradient(
+                to bottom,
+                var(--blue) 0%,
+                var(--indigo) 45%,
+                rgba(99,102,241,0.25) 80%,
+                transparent 100%
+            );
+            box-shadow: 0 0 8px rgba(59,130,246,0.18);
         }
 
         .tl-item {
@@ -517,12 +525,19 @@
             background: var(--blue);
             border-radius: 50%;
             border: 2px solid var(--bg-primary);
-            box-shadow: 0 0 10px rgba(59,130,246,0.6);
+            box-shadow: 0 0 10px rgba(59,130,246,0.55);
+            z-index: 2;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .tl-item:hover .tl-dot:not(.live):not(.tl-dot-cta) {
+            transform: scale(1.35);
+            box-shadow: 0 0 18px rgba(59,130,246,0.75);
         }
         .tl-dot.live {
             background: var(--emerald);
             box-shadow: 0 0 12px rgba(16,185,129,0.7);
             animation: pulseDot 2s infinite;
+            z-index: 2;
         }
 
         .tl-card {
@@ -621,11 +636,11 @@
         .sk-tag:hover { background: rgba(59,130,246,0.15); color: var(--blue-light); }
 
         .sk-tag.ai-tag {
-            background: rgba(167,139,250,0.08);
-            border-color: rgba(167,139,250,0.2);
-            color: var(--purple);
+            background: rgba(59,130,246,0.07);
+            border-color: rgba(59,130,246,0.14);
+            color: var(--text-secondary);
         }
-        .sk-tag.ai-tag:hover { background: rgba(167,139,250,0.18); }
+        .sk-tag.ai-tag:hover { background: rgba(59,130,246,0.15); color: var(--blue-light); }
 
         /* ========== AI SECTION ========== */
         #ai {
@@ -755,19 +770,32 @@
             background: rgba(99,102,241,0.05);
             border: 1px solid rgba(99,102,241,0.18);
             border-radius: 20px;
-            padding: 2.75rem 3rem;
+            padding: 2.75rem 3rem 2.75rem 4rem;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
         .ai-quote::before {
-            content: '"';
+            content: '\201C';
             position: absolute;
-            top: -2rem; left: 1.5rem;
-            font-size: 9rem;
-            color: rgba(99,102,241,0.09);
-            font-family: 'Space Grotesk', sans-serif;
+            top: 0.6rem;
+            left: 1.2rem;
+            font-size: 5.5rem;
+            color: rgba(99,102,241,0.14);
+            font-family: Georgia, 'Times New Roman', serif;
             line-height: 1;
+            pointer-events: none;
+        }
+        .ai-quote::after {
+            content: '\201D';
+            position: absolute;
+            bottom: 0.2rem;
+            right: 1.2rem;
+            font-size: 5.5rem;
+            color: rgba(99,102,241,0.14);
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1;
+            pointer-events: none;
         }
 
         .ai-quote p {
@@ -945,19 +973,23 @@
 
         /* ========== FUN OPEN POSITION CARD ========== */
         .tl-dot-cta {
-            background: transparent !important;
+            background: var(--bg-secondary) !important;
             border: 2px dashed var(--blue) !important;
-            box-shadow: none !important;
+            box-shadow: 0 0 10px rgba(59,130,246,0.25) !important;
             animation: none !important;
             color: var(--blue);
-            font-size: 0.7rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: 800;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 20px !important;
             height: 20px !important;
-            left: -2.65rem !important;
+            /* Recentre: dot center must align with the 2px line (left:0 of .timeline) */
+            left: -2.88rem !important;
+            top: 0.18rem !important;
+            z-index: 3 !important;
+            border-radius: 50% !important;
         }
 
         .tl-card-open {
@@ -1169,7 +1201,7 @@
             /* Timeline */
             .timeline { padding-left: 1.5rem; }
             .tl-dot { left: -2.1rem; }
-            .tl-dot-cta { left: -2.2rem !important; }
+            .tl-dot-cta { left: -2.45rem !important; top: 0.18rem !important; }
             .tl-card { padding: 1.25rem 1rem; }
             .tl-head { flex-direction: column; gap: 0.3rem; align-items: flex-start; }
             .tl-open-inner { flex-direction: column; gap: 0.75rem; }
@@ -1202,6 +1234,10 @@
             .about-cards { grid-template-columns: 1fr; }
             .ai-tools { grid-template-columns: 1fr; }
         }
+
+        @media (max-width: 780px) {
+            .view-switch-btn { display: flex; }
+        }
     </style>
 </head>
 <body>
@@ -1215,13 +1251,13 @@
     <a href="#skills" onclick="closeMobileMenu()">Skills</a>
     <a href="#ai" onclick="closeMobileMenu()">KI</a>
     <a href="#contact" class="menu-cta" onclick="closeMobileMenu()">Kontakt</a>
-    <a href="index.html" class="menu-switch">🖥 Desktop-Ansicht</a>
+    <a href="index-mobile.html" class="menu-switch">📱 Mobile-Ansicht</a>
 </div>
 
 <nav id="navbar">
     <div class="nav-logo">Joel<span>.</span></div>
-    <a href="index.html" class="view-switch-btn" title="Zur Desktop-Ansicht wechseln">
-        🖥 Desktop
+    <a href="index-mobile.html" class="view-switch-btn" title="Mobile Ansicht öffnen">
+        📱 Mobile
     </a>
     <button class="hamburger" id="hamburger" aria-label="Menü öffnen" onclick="toggleMobileMenu()">
         <span></span><span></span><span></span>
