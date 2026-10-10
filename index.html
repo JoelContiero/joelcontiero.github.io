@@ -1,827 +1,272 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="de-CH">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Contiero — Business Analyst IT &amp; Prozesse · Wirtschaftsinformatik ZHAW</title>
-    <meta name="description" content="Joel Contiero — Business Analyst IT & Prozesse und Wirtschaftsinformatik-Student (ZHAW, Schwerpunkt Data Science). Power BI, Microsoft 365 und Prozessanalyse, mit Hintergrund aus Automobiltechnik, Flughafenbetrieb und militärischer Führung.">
-    <meta name="theme-color" content="#f7f6f2">
-    <link rel="canonical" href="https://joelcontiero.github.io/">
-
-    <!-- Open Graph / Social Preview -->
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://joelcontiero.github.io/">
-    <meta property="og:title" content="Joel Contiero — Business Analyst IT &amp; Prozesse">
-    <meta property="og:description" content="Ich verbinde operative Präzision, Prozessverständnis und Datenkompetenz, um digitale Abläufe messbar einfacher zu machen.">
-    <meta property="og:image" content="https://joelcontiero.github.io/assets/joel_contiero_bw.jpg">
-    <meta property="og:locale" content="de_CH">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Strukturierte Daten für Suchmaschinen -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Joel Contiero",
-        "url": "https://joelcontiero.github.io/",
-        "jobTitle": "Business Analyst IT & Prozesse",
-        "worksFor": { "@type": "Organization", "name": "Work Selection AG" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "ZHAW School of Management and Law" },
-        "address": { "@type": "PostalAddress", "addressLocality": "Schlieren", "addressRegion": "ZH", "addressCountry": "CH" },
-        "email": "mailto:joelcontiero@gmail.com",
-        "telephone": "+41763417041",
-        "knowsLanguage": ["de", "en", "fr"],
-        "sameAs": ["https://www.linkedin.com/in/joel-contiero-0549141a2"]
-    }
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joel Contiero · Business Analyst IT &amp; Prozesse</title>
+<meta name="description" content="Business Analyst bei der Work Selection AG und Wirtschaftsinformatik-Student an der ZHAW. Projekte zu Daten, Automatisierung und KI. CV als PDF.">
+<link rel="canonical" href="https://joelcontiero.github.io/">
+<meta name="theme-color" content="#F3F2EE">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://joelcontiero.github.io/">
+<meta property="og:title" content="Joel Contiero · Business Analyst IT &amp; Prozesse">
+<meta property="og:description" content="Business Analyst bei der Work Selection AG und Wirtschaftsinformatik-Student an der ZHAW. Projekte zu Daten, Automatisierung und KI. CV als PDF.">
+<meta property="og:image" content="https://joelcontiero.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_CH">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css?v=9891378a">
+<link rel="stylesheet" href="assets/css/tweaks.css?v=9891378a">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://joelcontiero.github.io/#person", "name": "Joel Contiero", "url": "https://joelcontiero.github.io/", "image": "https://joelcontiero.github.io/assets/img/joel-contiero.jpg", "jobTitle": "Business Analyst IT & Prozesse", "worksFor": {"@type": "Organization", "name": "Work Selection AG", "address": {"@type": "PostalAddress", "addressLocality": "Baden", "addressCountry": "CH"}}, "affiliation": {"@type": "CollegeOrUniversity", "name": "ZHAW School of Management and Law", "address": {"@type": "PostalAddress", "addressLocality": "Winterthur", "addressCountry": "CH"}}, "alumniOf": [{"@type": "EducationalOrganization", "name": "Juventus Maturitätsschule Zürich"}], "homeLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Schlieren", "addressRegion": "ZH", "addressCountry": "CH"}}, "email": "mailto:joelcontiero@gmail.com", "knowsLanguage": ["de", "en", "fr"], "knowsAbout": ["Business Analyse", "Requirements Engineering", "Prozessanalyse", "Power BI", "Microsoft 365", "Prozessautomatisierung", "Power Automate", "IT-Support", "KI-gestützte Datenanalyse"], "sameAs": ["https://www.linkedin.com/in/joel-contiero-0549141a2", "https://github.com/JoelContiero"], "description": "Business Analyst IT & Prozesse bei der Work Selection AG und Wirtschaftsinformatik-Student (BSc, Schwerpunkt Data Science) an der ZHAW. Setzt Daten- und Automatisierungsprojekte mit KI-Werkzeugen um."}</script>
 </head>
 <body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
 
-<!-- ========== NAVBAR ========== -->
-<div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="#projekte">Arbeiten</a>
-    <a href="#about">Über mich</a>
-    <a href="#experience">Erfahrung</a>
-    <a href="#education">Ausbildung</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact" class="nav-cta">Kontakt</a>
+<header class="runhead">
+  <span class="progress" aria-hidden="true"></span>
+  <div class="wrap">
+    <a class="runhead__title" href="index.html"><strong>Joel Contiero</strong> <span>· Bericht 2026 · Stand Oktober 2026</span></a>
+    <nav class="runhead__nav" aria-label="Kapitel">
+      <ol><li><a href="#projekte"><b>1</b>Projekte</a></li><li><a href="#arbeitsweise"><b>2</b>Arbeitsweise</a></li><li><a href="#kompetenzen"><b>3</b>Kompetenzen</a></li><li><a href="#werdegang"><b>4</b>Werdegang</a></li><li><a href="#kontakt"><b>5</b>Kontakt</a></li></ol>
+      <a class="btn-line" href="assets/docs/Joel_Contiero_CV.pdf" download><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M3 14h10"/></svg> CV (PDF)</a>
+      <details class="menu"><summary>Inhalt</summary><ol><li><a href="#projekte"><b>1</b>Projekte</a></li><li><a href="#arbeitsweise"><b>2</b>Arbeitsweise</a></li><li><a href="#kompetenzen"><b>3</b>Kompetenzen</a></li><li><a href="#werdegang"><b>4</b>Werdegang</a></li><li><a href="#kontakt"><b>5</b>Kontakt</a></li><li><a href="assets/docs/Joel_Contiero_CV.pdf" download><b>↓</b>CV herunterladen (PDF)</a></li></ol></details>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+
+<section class="hero" aria-labelledby="name">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div>
+        <h1 class="hero__name" id="name"><span class="ln"><span>Joel</span></span> <span class="ln"><span>Contiero</span></span></h1>
+        <p class="hero__lead">Ich übersetze Fachprobleme in klare Anforderungen und setze daraus mit KI-Werkzeugen funktionierende Daten-Tools um.<sup><a href="#fn1" aria-label="Fussnote 1">1</a></sup></p>
+        <p class="hero__context">Heute arbeite ich als Business Analyst IT &amp; Prozesse. Daneben studiere ich Wirtschaftsinformatik an der ZHAW, Schwerpunkt Data Science.</p>
+        <p class="hero__status">Offen für Stellen als Business Analyst, Data Analyst oder im IT-Consulting.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="assets/docs/Joel_Contiero_CV.pdf" download><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M3 14h10"/></svg> CV herunterladen (PDF)</a>
+          <a class="btn" href="mailto:joelcontiero@gmail.com"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5h12v9H2z"/><path d="m2.5 4 5.5 4.5L13.5 4"/></svg> E-Mail schreiben</a>
+        </div>
+      </div>
+      <div class="hero__figure">
+        <figure class="figure__img">
+          <picture>
+            <source srcset="assets/img/joel-contiero.webp" type="image/webp">
+            <img src="assets/img/joel-contiero.jpg" width="1200" height="857" alt="Porträt von Joel Contiero" fetchpriority="high">
+          </picture>
+        </figure>
+        <div class="tbl">
+          <div class="tbl__cap"><strong>Abbildung und Tabelle 1 · Kurzprofil</strong><span>Quelle: CV · Stand Oktober 2026</span></div>
+          <table class="kv">
+            <tbody>
+              <tr><th scope="row">Rolle</th><td>Business Analyst IT &amp; Prozesse</td></tr>
+              <tr><th scope="row">Studium</th><td>BSc Wirtschaftsinformatik, ZHAW, bis 2029</td></tr>
+              <tr><th scope="row">Ort</th><td>Schlieren, Zürich · hybrid</td></tr>
+              <tr><th scope="row">Sprachen</th><td>Deutsch, Englisch C1, Französisch Grundkenntnisse</td></tr>
+              <tr><th scope="row">GitHub</th><td><a class="tlink" href="https://github.com/JoelContiero">github.com/JoelContiero <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="M6 3h7v7M13 3 4 12"/></svg></a></td></tr>
+              <tr><th scope="row">LinkedIn</th><td><a class="tlink" href="https://www.linkedin.com/in/joel-contiero-0549141a2">joel-contiero <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="M6 3h7v7M13 3 4 12"/></svg></a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="footnote-bar" id="fn1"><span><sup>1</sup> Den Code meiner Projekte schreiben KI-Werkzeuge nach meinen Vorgaben. Fragestellung, Regeln und Prüfung liegen bei mir.</span><span>joelcontiero.github.io</span></p>
+  </div>
+</section>
+
+<section class="chapter" id="projekte" aria-labelledby="h-projekte">
+  <div class="wrap">
+    <div class="opener">
+      <span class="opener__no" aria-hidden="true">1</span>
+      <h2 id="h-projekte">Was ich gebaut und umgesetzt habe</h2>
+      <span></span>
+    </div>
+    <div class="chapter__body">
+      <div class="index">
+        <div class="index__cap"><strong>Tabelle 1.1 · Projektverzeichnis</strong><span>8 Einträge · Stand Oktober 2026</span></div>
+<article class="index__row has-link" id="p01">
+  <span class="index__no">01</span>
+  <div class="index__title"><h3><a href="projekte/firmen-score/">Firmen-Score<span class="index__arrow" aria-hidden="true">→</span></a></h3><p class="index__meta">2026 · Eigenes Projekt · Daten · KI</p></div>
+  <div class="index__text"><p>Bewertet die finanzielle Gesundheit börsennotierter US-Firmen aus ihren öffentlichen SEC-Berichten. Der Code rechnet die Kennzahlen, die KI liest nur die Texte.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Ich wollte die Auswahl von Investitionsmöglichkeiten an der Börse vereinfachen: auf einen Blick sehen, welche Firmen finanziell gesund sind und wo es Warnzeichen gibt, statt Geschäftsberichte einzeln zu lesen.</dd></div><div><dt>Ergebnis</dt><dd>Eine Web-App mit rund 1&#x27;400 bewerteten US-Firmen, täglich aktualisiert. Rückgerechnet seit 2016 stürzten Firmen mit tiefem Score gut zweieinhalbmal so oft ab (47 % gegenüber 18 %).</dd></div></dl></div>
+  <div class="index__fig"><b>rund 1&#x27;400</b><span>US-Firmen, Score 0–100</span></div>
+  <div class="index__go"><a class="index__btn" href="projekte/firmen-score/">Projektseite öffnen →</a><span class="quiet">Code privat</span></div>
+</article>
+<article class="index__row has-link" id="p02">
+  <span class="index__no">02</span>
+  <div class="index__title"><h3><a href="projekte/job-radar/">Job-Radar<span class="index__arrow" aria-hidden="true">→</span></a></h3><p class="index__meta">2026 · Eigenes Projekt · Automatisierung · KI</p></div>
+  <div class="index__text"><p>Sammelt jeden Abend neue Stelleninserate, filtert sie per Code vor, lässt die KI die Passung bewerten und meldet die besten Treffer.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Ich suche gezielt Stellen an der Schnittstelle zwischen IT, Daten und Fachbereich. Täglich kommen viele Inserate, nur wenige passen. Das Vorsortieren wollte ich nicht mehr von Hand machen.</dd></div><div><dt>Ergebnis</dt><dd>Jeden Abend genau eine Nachricht mit den passenden Stellen. Jede Bewertung der KI lässt sich mit meinem eigenen Urteil vergleichen.</dd></div></dl></div>
+  <div class="index__fig"><b>1</b><span>KI-Aufruf pro Inserat</span></div>
+  <div class="index__go"><a class="index__btn" href="projekte/job-radar/">Projektseite öffnen →</a><span class="quiet">Code privat</span></div>
+</article>
+<article class="index__row has-link" id="p03">
+  <span class="index__no">03</span>
+  <div class="index__title"><h3><a href="projekte/mietpreise/">Mietpreise Schweiz<span class="index__arrow" aria-hidden="true">→</span></a></h3><p class="index__meta">2026 · Eigenes Projekt · Open Data</p></div>
+  <div class="index__text"><p>Analyse mit offenen Daten des Bundesamts für Statistik: Mieten im Vergleich zu Löhnen und Teuerung, und nach Kanton.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Steigende Mieten sind in der Schweiz ein Dauerthema, besonders im Raum Zürich. Ich wollte mit offiziellen Zahlen prüfen, was davon stimmt.</dd></div><div><dt>Ergebnis</dt><dd>Mieten 2010–2020 +8,2 %, Reallöhne +8,7 %: Die Löhne hielten Schritt. Zürich liegt beim Niveau auf Rang 2 und beim Anstieg auf Rang 3.</dd></div></dl></div>
+  <div class="index__fig"><b>+8,2 %</b><span>Mieten 2010–2020</span></div>
+  <div class="index__go"><a class="index__btn" href="projekte/mietpreise/">Projektseite öffnen →</a><a href="https://github.com/JoelContiero/mietpreise-schweiz-analyse">Code auf GitHub <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="M6 3h7v7M13 3 4 12"/></svg></a></div>
+</article>
+<article class="index__row" id="p04">
+  <span class="index__no">04</span>
+  <div class="index__title"><h3>Mail-Sortierer</h3><p class="index__meta">2026 · Eigenes Projekt · Automatisierung · KI</p></div>
+  <div class="index__text"><p>Sortiert mein Gmail-Postfach automatisch in Ordner. Ist sich die KI unsicher, bleibt die Mail im Posteingang. Es wird nie etwas gelöscht.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Bei vielen laufenden Bewerbungen gingen Antworten von Arbeitgebern zwischen Newslettern und Stellenalarmen unter.</dd></div><div><dt>Ergebnis</dt><dd>Das Postfach sortiert sich jeden Abend selbst: Eingangsbestätigungen, Absagen und Einladungen in eigene Ordner, Mails mit Handlungsbedarf separat.</dd></div></dl></div>
+  <div class="index__fig"><b>täglich</b><span>automatischer Lauf</span></div>
+  <div class="index__go"><span class="quiet">Code privat</span></div>
+</article>
+<article class="index__row" id="p05">
+  <span class="index__no">05</span>
+  <div class="index__title"><h3>Automatisiertes Onboarding</h3><p class="index__meta">2025–2026 · Arbeitsprojekt · Prozessautomatisierung</p></div>
+  <div class="index__text"><p>Konzept und Umsetzung einer automatisierten Informationsstrecke für neue Temporärmitarbeitende, ergänzt um einen automatischen Feedback-Ablauf.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Wichtige Informationen für neue Mitarbeitende wurden einzeln und von Hand verschickt.</dd></div><div><dt>Ergebnis</dt><dd>Weniger manuelle Arbeit im Team. Neue Mitarbeitende erhalten zuverlässig die richtigen Informationen, und Feedback fliesst systematisch zurück.</dd></div></dl></div>
+  <div class="index__fig"></div>
+  <div class="index__go"><span class="quiet">anonymisiert</span></div>
+</article>
+<article class="index__row" id="p06">
+  <span class="index__no">06</span>
+  <div class="index__title"><h3>Power-BI-Reporting</h3><p class="index__meta">2025–2026 · Arbeitsprojekt · Reporting</p></div>
+  <div class="index__text"><p>Aufbau und Weiterentwicklung von Power-BI-Reports, gemeinsam mit den Fachbereichen.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Kennzahlen waren verstreut und mussten von Hand zusammengetragen werden.</dd></div><div><dt>Ergebnis</dt><dd>Eine gemeinsame, aktuelle Entscheidungsgrundlage für Management und Fachbereiche.</dd></div></dl></div>
+  <div class="index__fig"></div>
+  <div class="index__go"><span class="quiet">anonymisiert</span></div>
+</article>
+<article class="index__row" id="p07">
+  <span class="index__no">07</span>
+  <div class="index__title"><h3>Ablage in Microsoft 365</h3><p class="index__meta">2025–2026 · Arbeitsprojekt · Prozesse</p></div>
+  <div class="index__text"><p>Analyse und Neuordnung der Ablage- und Zusammenarbeitsstruktur, inklusive Begleitung der Umstellung.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Gewachsene Strukturen kosteten Zeit bei der Suche nach Dokumenten.</dd></div><div><dt>Ergebnis</dt><dd>Eine Struktur, die im Alltag genutzt wird, und weniger Suchaufwand.</dd></div></dl></div>
+  <div class="index__fig"></div>
+  <div class="index__go"><span class="quiet">anonymisiert</span></div>
+</article>
+<article class="index__row" id="p08">
+  <span class="index__no">08</span>
+  <div class="index__title"><h3>CMS-Migration</h3><p class="index__meta">2025–2026 · Arbeitsprojekt · Hochschule · Web</p></div>
+  <div class="index__text"><p>Koordination einer Website-Migration mit einem externen Dienstleister und Aufbau der Inhalte im neuen System.</p><dl class="index__dl"><div><dt>Warum</dt><dd>Die bestehende Website lief auf einer veralteten Systemversion.</dd></div><div><dt>Ergebnis</dt><dd>Die Website läuft vollständig auf der neuen Version. Die Umstellung lief abgestimmt zwischen Fachbereich und Dienstleister.</dd></div></dl></div>
+  <div class="index__fig"></div>
+  <div class="index__go"><span class="quiet">anonymisiert</span></div>
+</article>
+        <p class="index__note">Die eigenen Projekte (01 bis 04) sind ausserhalb der Arbeit entstanden und mit KI umgesetzt. Arbeitsprojekte (05 bis 08) sind anonymisiert und nur grob beschrieben.</p>
+      </div>
+      <div class="figs">
+        <figure class="fig">
+  <figcaption><div class="fig__cap"><strong>Grafik 1.1 · Erkennt der Firmen-Score Absturzrisiken?</strong><a href="projekte/firmen-score/">Projekt 01 →</a></div><p class="fig__sub">Je 100 Firmen pro Score-Bereich: so viele Aktien verloren im Jahr danach mehr als 40 % an Wert. Ein Quadrat ist eine Firma. Score 0 = finanziell schwach, 100 = gesund.</p></figcaption>
+  <div class="units" data-anim="units" role="img" aria-label="Score 0–35: 47 von 100; Score 35–50: 38 von 100; Score 50–65: 24 von 100; Score 65–100: 18 von 100"><div class="units__band"><div class="units__grid" aria-hidden="true"><i class=on style="--dx:5px;--dy:-82px;--r:11deg;--d:333ms;--cd:1300ms"></i><i class=on style="--dx:-136px;--dy:-102px;--r:47deg;--d:48ms;--cd:1314ms"></i><i class=on style="--dx:27px;--dy:29px;--r:-76deg;--d:465ms;--cd:1328ms"></i><i class=on style="--dx:99px;--dy:-66px;--r:-81deg;--d:44ms;--cd:1342ms"></i><i class=on style="--dx:62px;--dy:-13px;--r:-73deg;--d:123ms;--cd:1356ms"></i><i class=on style="--dx:-114px;--dy:21px;--r:18deg;--d:30ms;--cd:1370ms"></i><i class=on style="--dx:129px;--dy:-89px;--r:-33deg;--d:322ms;--cd:1384ms"></i><i class=on style="--dx:138px;--dy:-105px;--r:57deg;--d:299ms;--cd:1398ms"></i><i class=on style="--dx:43px;--dy:-108px;--r:-34deg;--d:23ms;--cd:1412ms"></i><i class=on style="--dx:125px;--dy:99px;--r:-56deg;--d:148ms;--cd:1426ms"></i><i class=on style="--dx:54px;--dy:-84px;--r:48deg;--d:60ms;--cd:1440ms"></i><i class=on style="--dx:132px;--dy:-42px;--r:53deg;--d:417ms;--cd:1454ms"></i><i class=on style="--dx:-68px;--dy:-94px;--r:58deg;--d:292ms;--cd:1468ms"></i><i class=on style="--dx:-64px;--dy:-25px;--r:-66deg;--d:280ms;--cd:1482ms"></i><i class=on style="--dx:-128px;--dy:24px;--r:-75deg;--d:316ms;--cd:1496ms"></i><i class=on style="--dx:-55px;--dy:7px;--r:84deg;--d:272ms;--cd:1510ms"></i><i class=on style="--dx:58px;--dy:78px;--r:-10deg;--d:238ms;--cd:1524ms"></i><i class=on style="--dx:139px;--dy:116px;--r:26deg;--d:185ms;--cd:1538ms"></i><i class=on style="--dx:-7px;--dy:-57px;--r:-44deg;--d:357ms;--cd:1552ms"></i><i class=on style="--dx:-36px;--dy:-100px;--r:57deg;--d:153ms;--cd:1566ms"></i><i class=on style="--dx:108px;--dy:6px;--r:-3deg;--d:373ms;--cd:1580ms"></i><i class=on style="--dx:69px;--dy:-47px;--r:65deg;--d:37ms;--cd:1594ms"></i><i class=on style="--dx:-100px;--dy:11px;--r:17deg;--d:84ms;--cd:1608ms"></i><i class=on style="--dx:15px;--dy:-82px;--r:35deg;--d:215ms;--cd:1622ms"></i><i class=on style="--dx:-140px;--dy:51px;--r:-71deg;--d:391ms;--cd:1636ms"></i><i class=on style="--dx:125px;--dy:26px;--r:-10deg;--d:174ms;--cd:1650ms"></i><i class=on style="--dx:19px;--dy:32px;--r:37deg;--d:296ms;--cd:1664ms"></i><i class=on style="--dx:73px;--dy:-103px;--r:-67deg;--d:483ms;--cd:1678ms"></i><i class=on style="--dx:-22px;--dy:1px;--r:88deg;--d:340ms;--cd:1692ms"></i><i class=on style="--dx:-127px;--dy:-105px;--r:89deg;--d:158ms;--cd:1706ms"></i><i class=on style="--dx:135px;--dy:54px;--r:24deg;--d:145ms;--cd:1720ms"></i><i class=on style="--dx:37px;--dy:107px;--r:81deg;--d:177ms;--cd:1734ms"></i><i class=on style="--dx:-149px;--dy:120px;--r:28deg;--d:181ms;--cd:1748ms"></i><i class=on style="--dx:-74px;--dy:36px;--r:-61deg;--d:252ms;--cd:1762ms"></i><i class=on style="--dx:-130px;--dy:-65px;--r:-17deg;--d:66ms;--cd:1776ms"></i><i class=on style="--dx:-34px;--dy:-19px;--r:10deg;--d:469ms;--cd:1790ms"></i><i class=on style="--dx:94px;--dy:-100px;--r:-48deg;--d:229ms;--cd:1804ms"></i><i class=on style="--dx:45px;--dy:20px;--r:-19deg;--d:452ms;--cd:1818ms"></i><i class=on style="--dx:-90px;--dy:89px;--r:20deg;--d:442ms;--cd:1832ms"></i><i class=on style="--dx:121px;--dy:-49px;--r:90deg;--d:212ms;--cd:1846ms"></i><i class=on style="--dx:23px;--dy:54px;--r:7deg;--d:490ms;--cd:1860ms"></i><i class=on style="--dx:-42px;--dy:-82px;--r:-69deg;--d:90ms;--cd:1874ms"></i><i class=on style="--dx:-83px;--dy:-61px;--r:78deg;--d:119ms;--cd:1888ms"></i><i class=on style="--dx:-154px;--dy:4px;--r:60deg;--d:93ms;--cd:1902ms"></i><i class=on style="--dx:-26px;--dy:-48px;--r:-89deg;--d:74ms;--cd:1916ms"></i><i class=on style="--dx:54px;--dy:16px;--r:4deg;--d:312ms;--cd:1930ms"></i><i class=on style="--dx:129px;--dy:-39px;--r:-58deg;--d:353ms;--cd:1944ms"></i><i style="--dx:103px;--dy:38px;--r:77deg;--d:346ms;--cd:1958ms"></i><i style="--dx:-133px;--dy:-4px;--r:84deg;--d:408ms;--cd:1972ms"></i><i style="--dx:126px;--dy:-20px;--r:11deg;--d:204ms;--cd:1986ms"></i><i style="--dx:41px;--dy:-94px;--r:33deg;--d:324ms;--cd:2000ms"></i><i style="--dx:45px;--dy:-105px;--r:-42deg;--d:34ms;--cd:2014ms"></i><i style="--dx:-54px;--dy:-8px;--r:-49deg;--d:56ms;--cd:2028ms"></i><i style="--dx:14px;--dy:33px;--r:-77deg;--d:52ms;--cd:2042ms"></i><i style="--dx:-160px;--dy:25px;--r:-52deg;--d:274ms;--cd:2056ms"></i><i style="--dx:-109px;--dy:-27px;--r:67deg;--d:13ms;--cd:2070ms"></i><i style="--dx:-124px;--dy:103px;--r:-37deg;--d:314ms;--cd:2084ms"></i><i style="--dx:32px;--dy:-82px;--r:72deg;--d:129ms;--cd:2098ms"></i><i style="--dx:17px;--dy:34px;--r:3deg;--d:242ms;--cd:2112ms"></i><i style="--dx:-98px;--dy:-91px;--r:34deg;--d:500ms;--cd:2126ms"></i><i style="--dx:78px;--dy:2px;--r:33deg;--d:159ms;--cd:2140ms"></i><i style="--dx:-117px;--dy:-84px;--r:-64deg;--d:383ms;--cd:2154ms"></i><i style="--dx:15px;--dy:69px;--r:-23deg;--d:245ms;--cd:2168ms"></i><i style="--dx:-78px;--dy:12px;--r:-85deg;--d:105ms;--cd:2182ms"></i><i style="--dx:110px;--dy:-28px;--r:-53deg;--d:353ms;--cd:2196ms"></i><i style="--dx:118px;--dy:114px;--r:-84deg;--d:388ms;--cd:2210ms"></i><i style="--dx:110px;--dy:-44px;--r:74deg;--d:442ms;--cd:2224ms"></i><i style="--dx:-114px;--dy:58px;--r:-24deg;--d:265ms;--cd:2238ms"></i><i style="--dx:27px;--dy:112px;--r:-48deg;--d:182ms;--cd:2252ms"></i><i style="--dx:-46px;--dy:16px;--r:48deg;--d:398ms;--cd:2266ms"></i><i style="--dx:97px;--dy:-36px;--r:72deg;--d:114ms;--cd:2280ms"></i><i style="--dx:153px;--dy:87px;--r:-41deg;--d:412ms;--cd:2294ms"></i><i style="--dx:-38px;--dy:89px;--r:12deg;--d:378ms;--cd:2308ms"></i><i style="--dx:-44px;--dy:-69px;--r:42deg;--d:252ms;--cd:2322ms"></i><i style="--dx:22px;--dy:67px;--r:-83deg;--d:14ms;--cd:2336ms"></i><i style="--dx:-17px;--dy:0px;--r:-24deg;--d:99ms;--cd:2350ms"></i><i style="--dx:149px;--dy:-32px;--r:24deg;--d:413ms;--cd:2364ms"></i><i style="--dx:18px;--dy:-27px;--r:-70deg;--d:112ms;--cd:2378ms"></i><i style="--dx:-108px;--dy:-62px;--r:30deg;--d:100ms;--cd:2392ms"></i><i style="--dx:12px;--dy:-68px;--r:33deg;--d:319ms;--cd:2406ms"></i><i style="--dx:152px;--dy:95px;--r:-90deg;--d:245ms;--cd:2420ms"></i><i style="--dx:16px;--dy:84px;--r:74deg;--d:43ms;--cd:2434ms"></i><i style="--dx:-99px;--dy:112px;--r:9deg;--d:400ms;--cd:2448ms"></i><i style="--dx:-58px;--dy:2px;--r:-45deg;--d:222ms;--cd:2462ms"></i><i style="--dx:10px;--dy:-98px;--r:11deg;--d:237ms;--cd:2476ms"></i><i style="--dx:45px;--dy:70px;--r:-69deg;--d:371ms;--cd:2490ms"></i><i style="--dx:-79px;--dy:-77px;--r:-58deg;--d:14ms;--cd:2504ms"></i><i style="--dx:-83px;--dy:31px;--r:29deg;--d:412ms;--cd:2518ms"></i><i style="--dx:-86px;--dy:36px;--r:62deg;--d:242ms;--cd:2532ms"></i><i style="--dx:19px;--dy:-81px;--r:50deg;--d:280ms;--cd:2546ms"></i><i style="--dx:-93px;--dy:-115px;--r:-87deg;--d:409ms;--cd:2560ms"></i><i style="--dx:-108px;--dy:14px;--r:-55deg;--d:222ms;--cd:2574ms"></i><i style="--dx:-61px;--dy:91px;--r:-36deg;--d:14ms;--cd:2588ms"></i><i style="--dx:-32px;--dy:-66px;--r:-16deg;--d:256ms;--cd:2602ms"></i><i style="--dx:-37px;--dy:75px;--r:60deg;--d:166ms;--cd:2616ms"></i><i style="--dx:-28px;--dy:19px;--r:17deg;--d:427ms;--cd:2630ms"></i><i style="--dx:-93px;--dy:-105px;--r:0deg;--d:459ms;--cd:2644ms"></i><i style="--dx:74px;--dy:49px;--r:59deg;--d:417ms;--cd:2658ms"></i><i style="--dx:104px;--dy:-13px;--r:38deg;--d:66ms;--cd:2672ms"></i><i style="--dx:112px;--dy:-82px;--r:44deg;--d:261ms;--cd:2686ms"></i></div><p class="units__lab"><span>Score 0–35</span><b>47<small> von 100</small></b></p></div><div class="units__band"><div class="units__grid" aria-hidden="true"><i class=on style="--dx:-151px;--dy:103px;--r:22deg;--d:487ms;--cd:1390ms"></i><i class=on style="--dx:-67px;--dy:35px;--r:-89deg;--d:487ms;--cd:1404ms"></i><i class=on style="--dx:-84px;--dy:-76px;--r:-54deg;--d:332ms;--cd:1418ms"></i><i class=on style="--dx:156px;--dy:65px;--r:-60deg;--d:374ms;--cd:1432ms"></i><i class=on style="--dx:-129px;--dy:-37px;--r:84deg;--d:355ms;--cd:1446ms"></i><i class=on style="--dx:111px;--dy:22px;--r:33deg;--d:491ms;--cd:1460ms"></i><i class=on style="--dx:-106px;--dy:106px;--r:53deg;--d:119ms;--cd:1474ms"></i><i class=on style="--dx:-33px;--dy:-72px;--r:-20deg;--d:111ms;--cd:1488ms"></i><i class=on style="--dx:-110px;--dy:9px;--r:25deg;--d:377ms;--cd:1502ms"></i><i class=on style="--dx:-146px;--dy:74px;--r:-74deg;--d:316ms;--cd:1516ms"></i><i class=on style="--dx:6px;--dy:36px;--r:39deg;--d:400ms;--cd:1530ms"></i><i class=on style="--dx:102px;--dy:-69px;--r:87deg;--d:231ms;--cd:1544ms"></i><i class=on style="--dx:71px;--dy:10px;--r:46deg;--d:503ms;--cd:1558ms"></i><i class=on style="--dx:84px;--dy:9px;--r:-27deg;--d:447ms;--cd:1572ms"></i><i class=on style="--dx:107px;--dy:104px;--r:-24deg;--d:562ms;--cd:1586ms"></i><i class=on style="--dx:126px;--dy:108px;--r:-39deg;--d:520ms;--cd:1600ms"></i><i class=on style="--dx:69px;--dy:-85px;--r:16deg;--d:152ms;--cd:1614ms"></i><i class=on style="--dx:40px;--dy:-7px;--r:-10deg;--d:127ms;--cd:1628ms"></i><i class=on style="--dx:-37px;--dy:-11px;--r:-72deg;--d:198ms;--cd:1642ms"></i><i class=on style="--dx:-5px;--dy:80px;--r:-59deg;--d:549ms;--cd:1656ms"></i><i class=on style="--dx:-81px;--dy:120px;--r:74deg;--d:428ms;--cd:1670ms"></i><i class=on style="--dx:27px;--dy:-84px;--r:-26deg;--d:542ms;--cd:1684ms"></i><i class=on style="--dx:-90px;--dy:-1px;--r:-34deg;--d:472ms;--cd:1698ms"></i><i class=on style="--dx:-112px;--dy:-19px;--r:34deg;--d:173ms;--cd:1712ms"></i><i class=on style="--dx:-46px;--dy:-79px;--r:90deg;--d:310ms;--cd:1726ms"></i><i class=on style="--dx:103px;--dy:-17px;--r:-4deg;--d:305ms;--cd:1740ms"></i><i class=on style="--dx:-60px;--dy:-29px;--r:-9deg;--d:137ms;--cd:1754ms"></i><i class=on style="--dx:27px;--dy:-116px;--r:-4deg;--d:373ms;--cd:1768ms"></i><i class=on style="--dx:74px;--dy:-8px;--r:90deg;--d:99ms;--cd:1782ms"></i><i class=on style="--dx:36px;--dy:-36px;--r:42deg;--d:409ms;--cd:1796ms"></i><i class=on style="--dx:-9px;--dy:11px;--r:-74deg;--d:147ms;--cd:1810ms"></i><i class=on style="--dx:-43px;--dy:104px;--r:-64deg;--d:133ms;--cd:1824ms"></i><i class=on style="--dx:-25px;--dy:-51px;--r:-80deg;--d:553ms;--cd:1838ms"></i><i class=on style="--dx:-68px;--dy:-51px;--r:-57deg;--d:509ms;--cd:1852ms"></i><i class=on style="--dx:56px;--dy:97px;--r:83deg;--d:509ms;--cd:1866ms"></i><i class=on style="--dx:-28px;--dy:-17px;--r:-52deg;--d:364ms;--cd:1880ms"></i><i class=on style="--dx:103px;--dy:26px;--r:36deg;--d:448ms;--cd:1894ms"></i><i class=on style="--dx:7px;--dy:-98px;--r:-19deg;--d:119ms;--cd:1908ms"></i><i style="--dx:-67px;--dy:-12px;--r:-72deg;--d:227ms;--cd:1922ms"></i><i style="--dx:-152px;--dy:42px;--r:-68deg;--d:500ms;--cd:1936ms"></i><i style="--dx:-27px;--dy:-99px;--r:65deg;--d:528ms;--cd:1950ms"></i><i style="--dx:-47px;--dy:-103px;--r:-23deg;--d:531ms;--cd:1964ms"></i><i style="--dx:-98px;--dy:-4px;--r:-88deg;--d:263ms;--cd:1978ms"></i><i style="--dx:123px;--dy:-14px;--r:-22deg;--d:408ms;--cd:1992ms"></i><i style="--dx:-94px;--dy:-109px;--r:44deg;--d:453ms;--cd:2006ms"></i><i style="--dx:-38px;--dy:120px;--r:-62deg;--d:586ms;--cd:2020ms"></i><i style="--dx:-78px;--dy:-53px;--r:-78deg;--d:182ms;--cd:2034ms"></i><i style="--dx:-57px;--dy:118px;--r:-11deg;--d:411ms;--cd:2048ms"></i><i style="--dx:-4px;--dy:15px;--r:-38deg;--d:238ms;--cd:2062ms"></i><i style="--dx:68px;--dy:8px;--r:82deg;--d:181ms;--cd:2076ms"></i><i style="--dx:-22px;--dy:-32px;--r:-86deg;--d:218ms;--cd:2090ms"></i><i style="--dx:-142px;--dy:-117px;--r:-86deg;--d:465ms;--cd:2104ms"></i><i style="--dx:98px;--dy:21px;--r:-42deg;--d:353ms;--cd:2118ms"></i><i style="--dx:83px;--dy:-58px;--r:24deg;--d:144ms;--cd:2132ms"></i><i style="--dx:61px;--dy:48px;--r:36deg;--d:369ms;--cd:2146ms"></i><i style="--dx:41px;--dy:9px;--r:-12deg;--d:442ms;--cd:2160ms"></i><i style="--dx:-50px;--dy:-62px;--r:-3deg;--d:191ms;--cd:2174ms"></i><i style="--dx:-89px;--dy:-17px;--r:-2deg;--d:117ms;--cd:2188ms"></i><i style="--dx:-94px;--dy:-117px;--r:-72deg;--d:410ms;--cd:2202ms"></i><i style="--dx:-30px;--dy:-10px;--r:-49deg;--d:118ms;--cd:2216ms"></i><i style="--dx:-117px;--dy:50px;--r:7deg;--d:535ms;--cd:2230ms"></i><i style="--dx:99px;--dy:51px;--r:-18deg;--d:396ms;--cd:2244ms"></i><i style="--dx:-36px;--dy:57px;--r:-15deg;--d:113ms;--cd:2258ms"></i><i style="--dx:75px;--dy:-73px;--r:-50deg;--d:227ms;--cd:2272ms"></i><i style="--dx:68px;--dy:-120px;--r:-23deg;--d:276ms;--cd:2286ms"></i><i style="--dx:8px;--dy:20px;--r:-8deg;--d:215ms;--cd:2300ms"></i><i style="--dx:-143px;--dy:105px;--r:-11deg;--d:201ms;--cd:2314ms"></i><i style="--dx:22px;--dy:-74px;--r:-90deg;--d:261ms;--cd:2328ms"></i><i style="--dx:35px;--dy:-99px;--r:31deg;--d:232ms;--cd:2342ms"></i><i style="--dx:97px;--dy:47px;--r:-39deg;--d:217ms;--cd:2356ms"></i><i style="--dx:98px;--dy:78px;--r:-89deg;--d:136ms;--cd:2370ms"></i><i style="--dx:-25px;--dy:89px;--r:-68deg;--d:163ms;--cd:2384ms"></i><i style="--dx:44px;--dy:30px;--r:-80deg;--d:291ms;--cd:2398ms"></i><i style="--dx:-149px;--dy:-44px;--r:-13deg;--d:412ms;--cd:2412ms"></i><i style="--dx:-41px;--dy:-99px;--r:59deg;--d:580ms;--cd:2426ms"></i><i style="--dx:110px;--dy:98px;--r:-51deg;--d:426ms;--cd:2440ms"></i><i style="--dx:145px;--dy:-21px;--r:-7deg;--d:458ms;--cd:2454ms"></i><i style="--dx:93px;--dy:-82px;--r:-18deg;--d:460ms;--cd:2468ms"></i><i style="--dx:156px;--dy:44px;--r:-53deg;--d:112ms;--cd:2482ms"></i><i style="--dx:102px;--dy:40px;--r:19deg;--d:465ms;--cd:2496ms"></i><i style="--dx:98px;--dy:-85px;--r:44deg;--d:475ms;--cd:2510ms"></i><i style="--dx:98px;--dy:25px;--r:-86deg;--d:513ms;--cd:2524ms"></i><i style="--dx:139px;--dy:84px;--r:84deg;--d:579ms;--cd:2538ms"></i><i style="--dx:-43px;--dy:-99px;--r:-83deg;--d:111ms;--cd:2552ms"></i><i style="--dx:-92px;--dy:43px;--r:2deg;--d:581ms;--cd:2566ms"></i><i style="--dx:-107px;--dy:-24px;--r:25deg;--d:375ms;--cd:2580ms"></i><i style="--dx:-135px;--dy:40px;--r:-86deg;--d:410ms;--cd:2594ms"></i><i style="--dx:112px;--dy:54px;--r:-28deg;--d:340ms;--cd:2608ms"></i><i style="--dx:-25px;--dy:-120px;--r:26deg;--d:498ms;--cd:2622ms"></i><i style="--dx:-125px;--dy:71px;--r:38deg;--d:549ms;--cd:2636ms"></i><i style="--dx:114px;--dy:-97px;--r:78deg;--d:359ms;--cd:2650ms"></i><i style="--dx:-127px;--dy:70px;--r:31deg;--d:219ms;--cd:2664ms"></i><i style="--dx:-122px;--dy:96px;--r:-23deg;--d:210ms;--cd:2678ms"></i><i style="--dx:-55px;--dy:-61px;--r:76deg;--d:589ms;--cd:2692ms"></i><i style="--dx:75px;--dy:6px;--r:7deg;--d:129ms;--cd:2706ms"></i><i style="--dx:85px;--dy:113px;--r:85deg;--d:237ms;--cd:2720ms"></i><i style="--dx:-137px;--dy:37px;--r:71deg;--d:419ms;--cd:2734ms"></i><i style="--dx:-59px;--dy:-101px;--r:63deg;--d:165ms;--cd:2748ms"></i><i style="--dx:9px;--dy:-55px;--r:76deg;--d:470ms;--cd:2762ms"></i><i style="--dx:-5px;--dy:39px;--r:55deg;--d:158ms;--cd:2776ms"></i></div><p class="units__lab"><span>Score 35–50</span><b>38<small> von 100</small></b></p></div><div class="units__band"><div class="units__grid" aria-hidden="true"><i class=on style="--dx:-154px;--dy:3px;--r:-75deg;--d:428ms;--cd:1480ms"></i><i class=on style="--dx:-23px;--dy:52px;--r:-65deg;--d:534ms;--cd:1494ms"></i><i class=on style="--dx:-49px;--dy:52px;--r:35deg;--d:328ms;--cd:1508ms"></i><i class=on style="--dx:104px;--dy:-47px;--r:28deg;--d:418ms;--cd:1522ms"></i><i class=on style="--dx:78px;--dy:76px;--r:-60deg;--d:637ms;--cd:1536ms"></i><i class=on style="--dx:121px;--dy:-69px;--r:-11deg;--d:680ms;--cd:1550ms"></i><i class=on style="--dx:-117px;--dy:119px;--r:31deg;--d:188ms;--cd:1564ms"></i><i class=on style="--dx:-12px;--dy:-3px;--r:-71deg;--d:599ms;--cd:1578ms"></i><i class=on style="--dx:99px;--dy:-5px;--r:-22deg;--d:378ms;--cd:1592ms"></i><i class=on style="--dx:-53px;--dy:114px;--r:-37deg;--d:218ms;--cd:1606ms"></i><i class=on style="--dx:137px;--dy:-97px;--r:-54deg;--d:562ms;--cd:1620ms"></i><i class=on style="--dx:108px;--dy:-53px;--r:2deg;--d:247ms;--cd:1634ms"></i><i class=on style="--dx:148px;--dy:89px;--r:71deg;--d:440ms;--cd:1648ms"></i><i class=on style="--dx:-17px;--dy:107px;--r:-62deg;--d:540ms;--cd:1662ms"></i><i class=on style="--dx:26px;--dy:-61px;--r:37deg;--d:639ms;--cd:1676ms"></i><i class=on style="--dx:88px;--dy:-20px;--r:-84deg;--d:261ms;--cd:1690ms"></i><i class=on style="--dx:-159px;--dy:5px;--r:84deg;--d:410ms;--cd:1704ms"></i><i class=on style="--dx:47px;--dy:-43px;--r:-54deg;--d:393ms;--cd:1718ms"></i><i class=on style="--dx:16px;--dy:-24px;--r:-10deg;--d:241ms;--cd:1732ms"></i><i class=on style="--dx:9px;--dy:-120px;--r:-7deg;--d:564ms;--cd:1746ms"></i><i class=on style="--dx:13px;--dy:94px;--r:11deg;--d:241ms;--cd:1760ms"></i><i class=on style="--dx:-60px;--dy:62px;--r:-87deg;--d:641ms;--cd:1774ms"></i><i class=on style="--dx:-12px;--dy:-56px;--r:5deg;--d:213ms;--cd:1788ms"></i><i class=on style="--dx:41px;--dy:-21px;--r:60deg;--d:219ms;--cd:1802ms"></i><i style="--dx:24px;--dy:116px;--r:19deg;--d:566ms;--cd:1816ms"></i><i style="--dx:-20px;--dy:98px;--r:-78deg;--d:323ms;--cd:1830ms"></i><i style="--dx:-108px;--dy:-107px;--r:79deg;--d:326ms;--cd:1844ms"></i><i style="--dx:-84px;--dy:-57px;--r:-22deg;--d:403ms;--cd:1858ms"></i><i style="--dx:101px;--dy:-40px;--r:-42deg;--d:575ms;--cd:1872ms"></i><i style="--dx:31px;--dy:80px;--r:19deg;--d:632ms;--cd:1886ms"></i><i style="--dx:-146px;--dy:87px;--r:71deg;--d:384ms;--cd:1900ms"></i><i style="--dx:123px;--dy:20px;--r:-38deg;--d:548ms;--cd:1914ms"></i><i style="--dx:-119px;--dy:-108px;--r:15deg;--d:410ms;--cd:1928ms"></i><i style="--dx:154px;--dy:72px;--r:-55deg;--d:509ms;--cd:1942ms"></i><i style="--dx:-14px;--dy:4px;--r:-78deg;--d:646ms;--cd:1956ms"></i><i style="--dx:121px;--dy:-88px;--r:-47deg;--d:421ms;--cd:1970ms"></i><i style="--dx:52px;--dy:-33px;--r:-18deg;--d:332ms;--cd:1984ms"></i><i style="--dx:-30px;--dy:69px;--r:77deg;--d:313ms;--cd:1998ms"></i><i style="--dx:47px;--dy:47px;--r:-29deg;--d:334ms;--cd:2012ms"></i><i style="--dx:87px;--dy:22px;--r:81deg;--d:381ms;--cd:2026ms"></i><i style="--dx:-99px;--dy:-78px;--r:74deg;--d:262ms;--cd:2040ms"></i><i style="--dx:-122px;--dy:-67px;--r:38deg;--d:643ms;--cd:2054ms"></i><i style="--dx:94px;--dy:20px;--r:-34deg;--d:411ms;--cd:2068ms"></i><i style="--dx:10px;--dy:74px;--r:25deg;--d:398ms;--cd:2082ms"></i><i style="--dx:-89px;--dy:20px;--r:-41deg;--d:304ms;--cd:2096ms"></i><i style="--dx:-114px;--dy:-76px;--r:-3deg;--d:464ms;--cd:2110ms"></i><i style="--dx:-114px;--dy:-39px;--r:-29deg;--d:368ms;--cd:2124ms"></i><i style="--dx:-28px;--dy:87px;--r:55deg;--d:283ms;--cd:2138ms"></i><i style="--dx:-150px;--dy:71px;--r:15deg;--d:376ms;--cd:2152ms"></i><i style="--dx:51px;--dy:70px;--r:44deg;--d:287ms;--cd:2166ms"></i><i style="--dx:32px;--dy:-51px;--r:-4deg;--d:565ms;--cd:2180ms"></i><i style="--dx:-129px;--dy:7px;--r:-19deg;--d:474ms;--cd:2194ms"></i><i style="--dx:24px;--dy:-88px;--r:85deg;--d:437ms;--cd:2208ms"></i><i style="--dx:110px;--dy:41px;--r:-35deg;--d:227ms;--cd:2222ms"></i><i style="--dx:-22px;--dy:109px;--r:-27deg;--d:376ms;--cd:2236ms"></i><i style="--dx:44px;--dy:45px;--r:24deg;--d:401ms;--cd:2250ms"></i><i style="--dx:-1px;--dy:97px;--r:-85deg;--d:245ms;--cd:2264ms"></i><i style="--dx:-144px;--dy:-12px;--r:31deg;--d:675ms;--cd:2278ms"></i><i style="--dx:140px;--dy:5px;--r:-90deg;--d:217ms;--cd:2292ms"></i><i style="--dx:40px;--dy:118px;--r:45deg;--d:617ms;--cd:2306ms"></i><i style="--dx:79px;--dy:-6px;--r:-27deg;--d:580ms;--cd:2320ms"></i><i style="--dx:-105px;--dy:-63px;--r:-51deg;--d:257ms;--cd:2334ms"></i><i style="--dx:107px;--dy:54px;--r:-63deg;--d:662ms;--cd:2348ms"></i><i style="--dx:74px;--dy:-99px;--r:51deg;--d:577ms;--cd:2362ms"></i><i style="--dx:-140px;--dy:-120px;--r:-58deg;--d:299ms;--cd:2376ms"></i><i style="--dx:131px;--dy:115px;--r:-81deg;--d:510ms;--cd:2390ms"></i><i style="--dx:-5px;--dy:-88px;--r:70deg;--d:308ms;--cd:2404ms"></i><i style="--dx:110px;--dy:42px;--r:21deg;--d:537ms;--cd:2418ms"></i><i style="--dx:-103px;--dy:-95px;--r:-72deg;--d:333ms;--cd:2432ms"></i><i style="--dx:108px;--dy:29px;--r:-41deg;--d:378ms;--cd:2446ms"></i><i style="--dx:-27px;--dy:-63px;--r:63deg;--d:180ms;--cd:2460ms"></i><i style="--dx:-155px;--dy:17px;--r:-13deg;--d:415ms;--cd:2474ms"></i><i style="--dx:-18px;--dy:-40px;--r:75deg;--d:609ms;--cd:2488ms"></i><i style="--dx:-36px;--dy:1px;--r:44deg;--d:300ms;--cd:2502ms"></i><i style="--dx:120px;--dy:-57px;--r:-83deg;--d:671ms;--cd:2516ms"></i><i style="--dx:50px;--dy:60px;--r:76deg;--d:337ms;--cd:2530ms"></i><i style="--dx:-132px;--dy:-115px;--r:-41deg;--d:435ms;--cd:2544ms"></i><i style="--dx:55px;--dy:-100px;--r:-25deg;--d:296ms;--cd:2558ms"></i><i style="--dx:57px;--dy:116px;--r:4deg;--d:296ms;--cd:2572ms"></i><i style="--dx:92px;--dy:-112px;--r:88deg;--d:353ms;--cd:2586ms"></i><i style="--dx:55px;--dy:-28px;--r:84deg;--d:382ms;--cd:2600ms"></i><i style="--dx:-59px;--dy:-119px;--r:-16deg;--d:558ms;--cd:2614ms"></i><i style="--dx:98px;--dy:-103px;--r:-38deg;--d:433ms;--cd:2628ms"></i><i style="--dx:-58px;--dy:-41px;--r:-41deg;--d:298ms;--cd:2642ms"></i><i style="--dx:78px;--dy:-64px;--r:-23deg;--d:569ms;--cd:2656ms"></i><i style="--dx:-9px;--dy:-93px;--r:69deg;--d:433ms;--cd:2670ms"></i><i style="--dx:152px;--dy:-73px;--r:-33deg;--d:428ms;--cd:2684ms"></i><i style="--dx:53px;--dy:113px;--r:80deg;--d:208ms;--cd:2698ms"></i><i style="--dx:144px;--dy:-83px;--r:10deg;--d:207ms;--cd:2712ms"></i><i style="--dx:-51px;--dy:-114px;--r:62deg;--d:252ms;--cd:2726ms"></i><i style="--dx:52px;--dy:-107px;--r:-75deg;--d:274ms;--cd:2740ms"></i><i style="--dx:41px;--dy:-5px;--r:-10deg;--d:555ms;--cd:2754ms"></i><i style="--dx:-103px;--dy:-100px;--r:-48deg;--d:348ms;--cd:2768ms"></i><i style="--dx:-63px;--dy:-73px;--r:77deg;--d:659ms;--cd:2782ms"></i><i style="--dx:108px;--dy:71px;--r:29deg;--d:196ms;--cd:2796ms"></i><i style="--dx:-1px;--dy:50px;--r:6deg;--d:609ms;--cd:2810ms"></i><i style="--dx:31px;--dy:-36px;--r:23deg;--d:266ms;--cd:2824ms"></i><i style="--dx:-105px;--dy:-120px;--r:-70deg;--d:323ms;--cd:2838ms"></i><i style="--dx:-119px;--dy:-31px;--r:17deg;--d:669ms;--cd:2852ms"></i><i style="--dx:-97px;--dy:23px;--r:-37deg;--d:374ms;--cd:2866ms"></i></div><p class="units__lab"><span>Score 50–65</span><b>24<small> von 100</small></b></p></div><div class="units__band"><div class="units__grid" aria-hidden="true"><i class=on style="--dx:22px;--dy:76px;--r:-11deg;--d:690ms;--cd:1570ms"></i><i class=on style="--dx:61px;--dy:-98px;--r:-78deg;--d:631ms;--cd:1584ms"></i><i class=on style="--dx:82px;--dy:-70px;--r:5deg;--d:547ms;--cd:1598ms"></i><i class=on style="--dx:68px;--dy:-71px;--r:-8deg;--d:456ms;--cd:1612ms"></i><i class=on style="--dx:82px;--dy:-113px;--r:71deg;--d:480ms;--cd:1626ms"></i><i class=on style="--dx:-34px;--dy:87px;--r:70deg;--d:662ms;--cd:1640ms"></i><i class=on style="--dx:47px;--dy:-110px;--r:6deg;--d:287ms;--cd:1654ms"></i><i class=on style="--dx:77px;--dy:-104px;--r:-75deg;--d:401ms;--cd:1668ms"></i><i class=on style="--dx:-61px;--dy:71px;--r:-74deg;--d:730ms;--cd:1682ms"></i><i class=on style="--dx:150px;--dy:-34px;--r:2deg;--d:409ms;--cd:1696ms"></i><i class=on style="--dx:11px;--dy:37px;--r:-79deg;--d:404ms;--cd:1710ms"></i><i class=on style="--dx:2px;--dy:116px;--r:-20deg;--d:422ms;--cd:1724ms"></i><i class=on style="--dx:-159px;--dy:64px;--r:62deg;--d:739ms;--cd:1738ms"></i><i class=on style="--dx:-127px;--dy:-114px;--r:-31deg;--d:324ms;--cd:1752ms"></i><i class=on style="--dx:83px;--dy:63px;--r:29deg;--d:758ms;--cd:1766ms"></i><i class=on style="--dx:37px;--dy:82px;--r:-26deg;--d:737ms;--cd:1780ms"></i><i class=on style="--dx:60px;--dy:88px;--r:36deg;--d:337ms;--cd:1794ms"></i><i class=on style="--dx:94px;--dy:-74px;--r:-88deg;--d:680ms;--cd:1808ms"></i><i style="--dx:-5px;--dy:90px;--r:87deg;--d:665ms;--cd:1822ms"></i><i style="--dx:-83px;--dy:35px;--r:-30deg;--d:437ms;--cd:1836ms"></i><i style="--dx:3px;--dy:-3px;--r:2deg;--d:671ms;--cd:1850ms"></i><i style="--dx:145px;--dy:-100px;--r:41deg;--d:371ms;--cd:1864ms"></i><i style="--dx:40px;--dy:72px;--r:-50deg;--d:396ms;--cd:1878ms"></i><i style="--dx:48px;--dy:-104px;--r:76deg;--d:287ms;--cd:1892ms"></i><i style="--dx:86px;--dy:21px;--r:49deg;--d:436ms;--cd:1906ms"></i><i style="--dx:-78px;--dy:-11px;--r:-64deg;--d:306ms;--cd:1920ms"></i><i style="--dx:-25px;--dy:39px;--r:-69deg;--d:376ms;--cd:1934ms"></i><i style="--dx:-111px;--dy:-13px;--r:37deg;--d:633ms;--cd:1948ms"></i><i style="--dx:68px;--dy:-76px;--r:-31deg;--d:338ms;--cd:1962ms"></i><i style="--dx:53px;--dy:-3px;--r:68deg;--d:726ms;--cd:1976ms"></i><i style="--dx:-40px;--dy:71px;--r:47deg;--d:703ms;--cd:1990ms"></i><i style="--dx:-98px;--dy:79px;--r:-15deg;--d:420ms;--cd:2004ms"></i><i style="--dx:-17px;--dy:25px;--r:-22deg;--d:460ms;--cd:2018ms"></i><i style="--dx:-30px;--dy:68px;--r:-24deg;--d:371ms;--cd:2032ms"></i><i style="--dx:64px;--dy:-57px;--r:-43deg;--d:395ms;--cd:2046ms"></i><i style="--dx:-40px;--dy:-81px;--r:-18deg;--d:722ms;--cd:2060ms"></i><i style="--dx:136px;--dy:-72px;--r:-7deg;--d:303ms;--cd:2074ms"></i><i style="--dx:42px;--dy:-56px;--r:-28deg;--d:529ms;--cd:2088ms"></i><i style="--dx:109px;--dy:-61px;--r:76deg;--d:683ms;--cd:2102ms"></i><i style="--dx:-109px;--dy:47px;--r:28deg;--d:288ms;--cd:2116ms"></i><i style="--dx:-108px;--dy:-119px;--r:31deg;--d:722ms;--cd:2130ms"></i><i style="--dx:-42px;--dy:95px;--r:24deg;--d:738ms;--cd:2144ms"></i><i style="--dx:31px;--dy:-110px;--r:-15deg;--d:389ms;--cd:2158ms"></i><i style="--dx:-99px;--dy:-108px;--r:-42deg;--d:577ms;--cd:2172ms"></i><i style="--dx:138px;--dy:-71px;--r:-71deg;--d:460ms;--cd:2186ms"></i><i style="--dx:102px;--dy:101px;--r:-45deg;--d:499ms;--cd:2200ms"></i><i style="--dx:148px;--dy:-54px;--r:80deg;--d:754ms;--cd:2214ms"></i><i style="--dx:-157px;--dy:-93px;--r:73deg;--d:575ms;--cd:2228ms"></i><i style="--dx:157px;--dy:-31px;--r:-35deg;--d:289ms;--cd:2242ms"></i><i style="--dx:28px;--dy:-33px;--r:-54deg;--d:292ms;--cd:2256ms"></i><i style="--dx:-56px;--dy:-55px;--r:-81deg;--d:576ms;--cd:2270ms"></i><i style="--dx:-56px;--dy:88px;--r:-88deg;--d:689ms;--cd:2284ms"></i><i style="--dx:7px;--dy:-16px;--r:83deg;--d:460ms;--cd:2298ms"></i><i style="--dx:-66px;--dy:38px;--r:-11deg;--d:309ms;--cd:2312ms"></i><i style="--dx:-56px;--dy:-112px;--r:36deg;--d:550ms;--cd:2326ms"></i><i style="--dx:87px;--dy:-104px;--r:14deg;--d:321ms;--cd:2340ms"></i><i style="--dx:42px;--dy:49px;--r:50deg;--d:349ms;--cd:2354ms"></i><i style="--dx:113px;--dy:-97px;--r:77deg;--d:353ms;--cd:2368ms"></i><i style="--dx:43px;--dy:58px;--r:-21deg;--d:479ms;--cd:2382ms"></i><i style="--dx:-15px;--dy:50px;--r:-12deg;--d:483ms;--cd:2396ms"></i><i style="--dx:-134px;--dy:-41px;--r:55deg;--d:722ms;--cd:2410ms"></i><i style="--dx:22px;--dy:-14px;--r:16deg;--d:279ms;--cd:2424ms"></i><i style="--dx:26px;--dy:44px;--r:-40deg;--d:470ms;--cd:2438ms"></i><i style="--dx:47px;--dy:-68px;--r:-89deg;--d:492ms;--cd:2452ms"></i><i style="--dx:-80px;--dy:-12px;--r:-61deg;--d:690ms;--cd:2466ms"></i><i style="--dx:-114px;--dy:-17px;--r:57deg;--d:722ms;--cd:2480ms"></i><i style="--dx:26px;--dy:-3px;--r:-49deg;--d:336ms;--cd:2494ms"></i><i style="--dx:-153px;--dy:-107px;--r:51deg;--d:342ms;--cd:2508ms"></i><i style="--dx:43px;--dy:-98px;--r:56deg;--d:588ms;--cd:2522ms"></i><i style="--dx:29px;--dy:68px;--r:39deg;--d:357ms;--cd:2536ms"></i><i style="--dx:-86px;--dy:-31px;--r:-18deg;--d:352ms;--cd:2550ms"></i><i style="--dx:106px;--dy:-77px;--r:-73deg;--d:325ms;--cd:2564ms"></i><i style="--dx:36px;--dy:5px;--r:-40deg;--d:424ms;--cd:2578ms"></i><i style="--dx:-96px;--dy:94px;--r:-79deg;--d:769ms;--cd:2592ms"></i><i style="--dx:87px;--dy:-40px;--r:-77deg;--d:581ms;--cd:2606ms"></i><i style="--dx:38px;--dy:-98px;--r:68deg;--d:622ms;--cd:2620ms"></i><i style="--dx:-78px;--dy:43px;--r:-34deg;--d:587ms;--cd:2634ms"></i><i style="--dx:47px;--dy:37px;--r:-40deg;--d:694ms;--cd:2648ms"></i><i style="--dx:82px;--dy:-74px;--r:54deg;--d:381ms;--cd:2662ms"></i><i style="--dx:-139px;--dy:-18px;--r:42deg;--d:350ms;--cd:2676ms"></i><i style="--dx:36px;--dy:-29px;--r:-59deg;--d:346ms;--cd:2690ms"></i><i style="--dx:-34px;--dy:65px;--r:-41deg;--d:291ms;--cd:2704ms"></i><i style="--dx:127px;--dy:95px;--r:82deg;--d:289ms;--cd:2718ms"></i><i style="--dx:5px;--dy:-90px;--r:9deg;--d:576ms;--cd:2732ms"></i><i style="--dx:73px;--dy:20px;--r:70deg;--d:668ms;--cd:2746ms"></i><i style="--dx:-4px;--dy:46px;--r:17deg;--d:427ms;--cd:2760ms"></i><i style="--dx:138px;--dy:-57px;--r:18deg;--d:469ms;--cd:2774ms"></i><i style="--dx:28px;--dy:-6px;--r:38deg;--d:494ms;--cd:2788ms"></i><i style="--dx:-69px;--dy:-115px;--r:-90deg;--d:586ms;--cd:2802ms"></i><i style="--dx:90px;--dy:-1px;--r:-30deg;--d:498ms;--cd:2816ms"></i><i style="--dx:156px;--dy:79px;--r:27deg;--d:698ms;--cd:2830ms"></i><i style="--dx:-69px;--dy:87px;--r:31deg;--d:474ms;--cd:2844ms"></i><i style="--dx:-106px;--dy:-103px;--r:-58deg;--d:453ms;--cd:2858ms"></i><i style="--dx:60px;--dy:-27px;--r:-67deg;--d:680ms;--cd:2872ms"></i><i style="--dx:66px;--dy:9px;--r:40deg;--d:606ms;--cd:2886ms"></i><i style="--dx:-140px;--dy:-110px;--r:72deg;--d:336ms;--cd:2900ms"></i><i style="--dx:-118px;--dy:116px;--r:-10deg;--d:668ms;--cd:2914ms"></i><i style="--dx:101px;--dy:-100px;--r:-77deg;--d:655ms;--cd:2928ms"></i><i style="--dx:98px;--dy:109px;--r:6deg;--d:604ms;--cd:2942ms"></i><i style="--dx:-91px;--dy:-114px;--r:-74deg;--d:584ms;--cd:2956ms"></i></div><p class="units__lab"><span>Score 65–100</span><b>18<small> von 100</small></b></p></div></div>
+  <p class="fig__read">Bei tiefem Score (0–35) stürzten 47 von 100 Aktien ab, bei hohem Score (65–100) nur 18. Der Score erkennt also Risiko. Welche Aktie steigt, sagt er nicht voraus.</p>
+  <p class="fig__src">Quelle: Firmen-Score, Kalibrierung über 1'022 US-Firmen, jedes Quartal 2016 bis 2025</p>
+</figure>
+        <figure class="fig">
+  <figcaption><div class="fig__cap"><strong>Grafik 1.2 · Sind die Mieten schneller gestiegen als die Löhne?</strong><a href="projekte/mietpreise/">Projekt 03 →</a></div><p class="fig__sub">Anstieg von 2010 bis 2020 in Prozent, Schweiz</p></figcaption>
+  <div class="bars" style="--bar-label:112px" data-anim="bars"><span class="bars__grid" aria-hidden="true"><i style="left:0%;--g:0"></i><i style="left:25%;--g:1"></i><i style="left:50%;--g:2"></i><i style="left:75%;--g:3"></i><i style="left:100%;--g:4"></i></span><div class="bar is-focus" title="Mieten: 8,2 %" style="--i:0"><span class="bar__lab">Mieten</span><span class="bar__track"><span class="bar__fill" style="--v:82.38%"></span></span><span class="bar__val">8,2 %</span></div><div class="bar" title="Nominallöhne: 7,2 %" style="--i:1"><span class="bar__lab">Nominallöhne</span><span class="bar__track"><span class="bar__fill" style="--v:72.24%"></span></span><span class="bar__val">7,2 %</span></div><div class="bar" title="Reallöhne: 8,7 %" style="--i:2"><span class="bar__lab">Reallöhne</span><span class="bar__track"><span class="bar__fill" style="--v:87.25%"></span></span><span class="bar__val">8,7 %</span></div></div>
+  <p class="fig__read">Die Mieten stiegen leicht schneller als die Nominallöhne. Weil die Teuerung tief war, hielten die Reallöhne Schritt.</p>
+  <p class="fig__src">Quelle: Bundesamt für Statistik, Mietpreisindex und Lohnindex; eigene Berechnung</p>
+</figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter chapter--dark" id="arbeitsweise" aria-labelledby="h-arbeitsweise">
+  <div class="wrap">
+    <div class="opener">
+      <span class="opener__no" aria-hidden="true">2</span>
+      <h2 id="h-arbeitsweise">So arbeite ich mit KI</h2>
+      <p class="opener__text">Den Code meiner Projekte schreiben KI-Werkzeuge wie Claude Code und Codex nach meinen Vorgaben. Ich lese ihn, teste ihn und entscheide, was gebaut wird. Meine Arbeit liegt vor allem davor und danach: Ich kläre die Frage, lege Datenquellen und Regeln fest, entscheide, was der Code erledigt und was die KI, und prüfe, ob das Ergebnis stimmt.</p>
+    </div>
+    <div class="chapter__body">
+      <div class="work">
+        <div class="tbl__cap tbl__cap--dark"><strong>Tabelle 2.1 · Arbeitsschritte: wer macht was</strong><span>Quelle: eigene Arbeitsweise, Projekte 01–04</span></div>
+        <table class="work__tbl">
+          <thead><tr><th scope="col">Nr.</th><th scope="col">Schritt</th><th scope="col">Wer</th><th scope="col">Was dabei passiert</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><th scope="row">Frage klären</th><td><span class="who">ich</span></td><td>Was soll am Ende entschieden werden, und von wem? Ohne klare Frage wird jedes Tool zu gross.</td></tr>
+            <tr><td class="num">2</td><th scope="row">Daten und Regeln festlegen</th><td><span class="who">ich</span></td><td>Welche Quellen sind verlässlich und öffentlich? Was lässt sich mit festen Regeln rechnen? Die KI bekommt nur, was sich nicht mit Regeln lösen lässt.</td></tr>
+            <tr><td class="num">3</td><th scope="row">Umsetzen lassen</th><td><span class="who who--ki">KI</span></td><td>Die KI schreibt den Code nach meinen Vorgaben. Ich lese die Ergebnisse, teste sie an Beispielen und lasse nachbessern.</td></tr>
+            <tr><td class="num">4</td><th scope="row">Prüfen und Grenzen benennen</th><td><span class="who">ich</span></td><td>Testläufe, Vergleich mit meinem eigenen Urteil, dokumentierte Grenzen. Ein Tool, dessen Schwächen niemand kennt, nützt im Alltag nichts.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="quote">
+        <p class="quote__label"><strong>Beispiel</strong>Firmen-Score, Projekt 01</p>
+        <blockquote>Beim Firmen-Score <em>rechnet die KI nie.</em> Alle Kennzahlen kommen aus dem Code. Die KI bekommt nur ausgewählte Textabschnitte und entscheidet zum Beispiel, ob ein Warnhinweis echt ist oder nur Standardtext.</blockquote>
+      </div>
+      <p class="tools">Werkzeuge im Alltag: Claude Code, Codex, ChatGPT, Microsoft Copilot, Gemini, NotebookLM.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="kompetenzen" aria-labelledby="h-kompetenzen">
+  <div class="wrap">
+    <div class="opener">
+      <span class="opener__no" aria-hidden="true">3</span>
+      <h2 id="h-kompetenzen">Was ich kann und wo ich es gezeigt habe</h2>
+      <p class="opener__text">Jede Kompetenz hängt an einer Station oder einem Projekt aus Kapitel 1.</p>
+    </div>
+    <div class="chapter__body">
+      <div class="tbl__cap"><strong>Tabelle 3.1 · Kompetenzen mit Beleg</strong><span>Stand Oktober 2026</span></div>
+      <table class="comp">
+        <thead><tr><th scope="col">Bereich</th><th scope="col">Was</th><th scope="col">Belegt durch</th></tr></thead>
+        <tbody><tr><td>Business Analyse</td><td>Requirements Engineering, Anforderungen aufnehmen und in User Stories fassen, Stakeholder Management, Schnittstelle zu externen IT-Dienstleistern</td><td>aktuelle Stelle, Hochschul-Webprojekt</td></tr><tr><td>Prozesse und Automatisierung</td><td>Prozessanalyse, Abläufe vereinfachen und dokumentieren, Power Automate, Microsoft Forms</td><td>Projekte 05 und 07</td></tr><tr><td>Reporting</td><td>Power BI: Dashboards und Auswertungen bauen, Kennzahlen mit Fachbereichen definieren, DAX mit KI-Unterstützung; Excel</td><td>Projekt 06</td></tr><tr><td>Microsoft 365 und IT-Betrieb</td><td>SharePoint, Teams, Exchange, Intune, Defender, Entra ID, 1st- und 2nd-Level-Support, Anwenderberatung</td><td>aktuelle Stelle</td></tr><tr><td>Daten und KI</td><td>Datenfragen formulieren, öffentliche Datenquellen erschliessen, Lösungen mit KI-Werkzeugen umsetzen und prüfen</td><td>Projekte 01 bis 04</td></tr><tr><td>Methoden</td><td>Scrum, Kanban</td><td>Studium, Arbeit</td></tr></tbody>
+      </table>
+      <p class="tbl__foot">In meinen Projekten eingesetzt, Code mit KI erstellt: Python, pandas, Jupyter, Streamlit, GitHub Actions, SEC-EDGAR-Schnittstelle, IMAP.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter chapter--tint" id="werdegang" aria-labelledby="h-werdegang">
+  <div class="wrap">
+    <div class="opener">
+      <span class="opener__no" aria-hidden="true">4</span>
+      <h2 id="h-werdegang">Von der Werkstatt zur Business Analyse</h2>
+      <p class="opener__text">In der Werkstatt habe ich gelernt, Fehler systematisch einzugrenzen: Symptom, Diagnose, Massnahme. Am Flughafen und in der Armee kamen Zeitdruck, Ausnahmen und Verantwortung für andere dazu. Diese Erfahrung nutze ich heute, wenn ich Prozesse und Daten analysiere.</p>
+    </div>
+    <div class="chapter__body">
+      <figure class="fig">
+        <figcaption><div class="fig__cap"><strong>Grafik 4.1 · Stationen 2018 bis heute</strong></div><p class="fig__sub">Blau: aktuelle Tätigkeiten</p></figcaption>
+        <div class="gantt" style="--years:9" data-anim="bars" role="img" aria-label="Zeitleiste der Stationen 2018 bis 2026">
+  <div class="gantt__axis"><span></span><span class="gantt__ticks"><span><span class="l">2018</span><span class="s">18</span></span><span><span class="l">2019</span><span class="s">19</span></span><span><span class="l">2020</span><span class="s">20</span></span><span><span class="l">2021</span><span class="s">21</span></span><span><span class="l">2022</span><span class="s">22</span></span><span><span class="l">2023</span><span class="s">23</span></span><span><span class="l">2024</span><span class="s">24</span></span><span><span class="l">2025</span><span class="s">25</span></span><span><span class="l">2026</span><span class="s">26</span></span></span></div>
+  <div class="gantt__row"><span class="gantt__label">Automobil-Fachmann, AMAG / Emil Frey</span><span class="gantt__lane"><span class="gantt__bar" style="--s:6.48%;--w:49.07%;--i:0" title="Automobil-Fachmann, AMAG / Emil Frey"></span></span></div><div class="gantt__row"><span class="gantt__label">Schweizer Armee</span><span class="gantt__lane"><span class="gantt__bar" style="--s:50.00%;--w:10.19%;--i:1" title="Schweizer Armee"></span></span></div><div class="gantt__row"><span class="gantt__label">Swissport, Flughafen Zürich</span><span class="gantt__lane"><span class="gantt__bar" style="--s:64.81%;--w:20.37%;--i:2" title="Swissport, Flughafen Zürich"></span></span></div><div class="gantt__row"><span class="gantt__label">Berufsmaturität, Juventus</span><span class="gantt__lane"><span class="gantt__bar" style="--s:73.15%;--w:11.11%;--i:3" title="Berufsmaturität, Juventus"></span></span></div><div class="gantt__row is-now"><span class="gantt__label">Business Analyst IT &amp; Prozesse</span><span class="gantt__lane"><span class="gantt__bar" style="--s:87.04%;--w:11.11%;--i:4" title="Business Analyst IT &amp; Prozesse"></span></span></div><div class="gantt__row is-now"><span class="gantt__label">ZHAW, Studium und Hilfskraft</span><span class="gantt__lane"><span class="gantt__bar" style="--s:85.19%;--w:12.96%;--i:5" title="ZHAW, Studium und Hilfskraft"></span></span></div>
 </div>
-
-<nav id="navbar" aria-label="Hauptnavigation">
-    <a class="nav-logo" href="#hero">Joel Contiero</a>
-    <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-        <li><a href="#projekte">Arbeiten</a></li>
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#experience">Erfahrung</a></li>
-        <li><a href="#education">Ausbildung</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="nav-cta">Kontakt</a></li>
-    </ul>
-</nav>
-
-<main>
-
-<!-- ========== HERO ========== -->
-<section id="hero">
-    <div class="section-wrap">
-        <div class="hero-grid">
-            <div class="hero-content">
-                <p class="hero-kicker">Business Analyst IT &amp; Prozesse · Wirtschaftsinformatik ZHAW</p>
-
-                <h1 class="hero-title">Joel Contiero</h1>
-
-                <p class="hero-claim">
-                    Ich verbinde operative Präzision, Prozessverständnis und Datenkompetenz,
-                    um digitale Abläufe messbar einfacher zu machen.
-                </p>
-                <p class="hero-subline">
-                    Erfahrung aus Automobiltechnik, Flughafenbetrieb, militärischer Führung
-                    und heutiger IT- und Prozessanalyse.
-                </p>
-
-                <p class="hero-avail">Offen für Junior-Business-Analyst-, Prozess- und Data-Rollen</p>
-
-                <div class="hero-buttons">
-                    <a href="assets/Joel_Contiero_CV.pdf" download class="btn-primary">CV herunterladen (PDF)</a>
-                    <a href="mailto:joelcontiero@gmail.com" class="btn-secondary">Kontakt aufnehmen</a>
-                    <a href="https://www.linkedin.com/in/joel-contiero-0549141a2" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
-                </div>
-            </div>
-
-            <figure class="hero-photo">
-                <img src="assets/joel_contiero_bw.jpg" alt="Porträt von Joel Contiero" width="2000" height="1333">
-                <dl class="hero-profile">
-                    <div><dt>Rolle</dt><dd>Business Analyst IT &amp; Prozesse</dd></div>
-                    <div><dt>Fokus</dt><dd>Power BI · M365 · Requirements</dd></div>
-                    <div><dt>Studium</dt><dd>ZHAW Wirtschaftsinformatik</dd></div>
-                    <div><dt>Standort</dt><dd>Zürich · hybrid</dd></div>
-                </dl>
-                <figcaption>Business Analyse, Power BI und M365-Prozesse — aus Schlieren/Zürich</figcaption>
-            </figure>
-        </div>
+        <p class="fig__src">Quelle: CV · Stand Oktober 2026</p>
+      </figure>
+      <div class="tbl" style="margin-top:clamp(48px,6vw,80px)">
+        <div class="tbl__cap"><strong>Tabelle 4.1 · Berufliche Stationen</strong><span>Quelle: CV, Arbeitszeugnisse</span></div>
+        <table class="cv-table"><tbody><tr class="cv-row"><th scope="row" class="num">Nov 2025 bis heute</th><td><h3>Business Analyst IT &amp; Prozesse</h3><p class="org">Work Selection AG, Baden</p></td><td><p>Ich bin die Schnittstelle zwischen Fachbereichen, Management und externen IT-Dienstleistern und übersetze Anforderungen in Prozess- und Reporting-Lösungen.</p><ul><li>Anforderungen in IT, Prozessen und Reporting analysieren</li><li>Power-BI-Reports aufbauen und weiterentwickeln</li><li>Microsoft 365, SharePoint und Teams betreuen, Mitarbeitende bei digitalen Tools beraten</li><li>1st- und 2nd-Level-Support, Geräte und Sicherheit mit Intune, Defender und Entra ID</li><li>Abläufe automatisieren, zum Beispiel das Onboarding</li></ul></td></tr><tr class="cv-row"><th scope="row" class="num">Nov 2025 bis heute</th><td><h3>Studentische Hilfskraft CRM &amp; Web Content</h3><p class="org">ZHAW School of Management and Law, Winterthur</p></td><td><ul><li>Migration auf die neue Umbraco-Version koordiniert, statische Seiten aufgebaut</li><li>Technische Abklärungen mit externen Dienstleistern zu CRM und Website</li><li>CRM- und CMS-Inhalte der Career Services pflegen</li></ul></td></tr><tr class="cv-row"><th scope="row" class="num">Nov 2023 bis Aug 2025</th><td><h3>Luftverkehrsangestellter im Passagierdienst</h3><p class="org">Swissport International AG, Flughafen Zürich</p></td><td><ul><li>Check-in und Gate in einem internationalen Umfeld</li><li>Unterstützung bei Flugunregelmässigkeiten und Boarding unter Zeitdruck</li></ul></td></tr><tr class="cv-row"><th scope="row" class="num">Jul 2022 bis Mai 2023</th><td><h3>Übermittlungssoldat, Unteroffizier</h3><p class="org">Schweizer Armee, Bière</p></td><td><ul><li>Führung, Organisation und Koordination in einer militärischen Einheit</li></ul></td></tr><tr class="cv-row"><th scope="row" class="num">Aug 2018 bis Dez 2022</th><td><h3>Automobil-Fachmann EFZ</h3><p class="org">AMAG Schlieren, Emil Frey Altstetten</p></td><td><ul><li>Diagnose, Reparatur und Wartung von Personenwagen und leichten Nutzfahrzeugen</li><li>Arbeiten nach Herstellervorgaben und Sicherheitsstandards</li></ul></td></tr></tbody></table>
+      </div>
+      <div class="tbl" style="margin-top:clamp(40px,5vw,64px)">
+        <div class="tbl__cap"><strong>Tabelle 4.2 · Ausbildung</strong><span>Quelle: CV, Zeugnisse</span></div>
+        <table class="cv-table"><tbody><tr class="cv-row"><th scope="row" class="num">Sep 2025 bis Aug 2029</th><td><h3>BSc Wirtschaftsinformatik, Schwerpunkt Data Science</h3></td><td><p>ZHAW School of Management and Law, Winterthur · Teilzeit</p></td></tr><tr class="cv-row"><th scope="row" class="num">Aug 2024 bis Jul 2025</th><td><h3>Berufsmaturität 2, Wirtschaft und Dienstleistungen</h3></td><td><p>Juventus Maturitätsschule, Zürich · Abschlussnote 5.3</p></td></tr><tr class="cv-row"><th scope="row" class="num">Aug 2018 bis Jul 2021</th><td><h3>Automobil-Fachmann EFZ (Lehre)</h3></td><td><p>AMAG Schlieren</p></td></tr></tbody></table>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- ========== AUSGEWÄHLTE ARBEITEN ========== -->
-<section id="projekte" class="band">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Ausgewählte Arbeiten</div>
-            <h2 class="s-title">Woran ich arbeite</h2>
-        </div>
-
-        <!-- Featured Case 1: Onboarding-Automatisierung -->
-        <article class="case-card case-featured">
-            <h3>Automatisiertes Onboarding für Temporärmitarbeitende</h3>
-            <figure class="case-artifact">
-                <svg viewBox="0 0 560 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prozessdarstellung: automatisierte Onboarding-Strecke über Brevo und Feedback-Workflow mit Microsoft Forms und Power Automate">
-                    <!-- Lane 1: Onboarding-Strecke -->
-                    <text x="0" y="12" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.2" fill="var(--ink-muted)">ONBOARDING-STRECKE</text>
-                    <rect x="0.5" y="26.5" width="104" height="40" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="52" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="var(--ink)">Kandidat erfasst</text>
-                    <line x1="105" y1="46.5" x2="119" y2="46.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                    <path d="M119 42.5 L126 46.5 L119 50.5 Z" fill="var(--ink-muted)"/>
-                    <rect x="126.5" y="26.5" width="128" height="40" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="190" y="44" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="var(--ink)">Brevo</text>
-                    <text x="190" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Segmentierung</text>
-                    <line x1="255" y1="46.5" x2="269" y2="46.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                    <path d="M269 42.5 L276 46.5 L269 50.5 Z" fill="var(--ink-muted)"/>
-                    <rect x="276.5" y="14.5" width="283" height="76" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="292" y="34" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="var(--ink)">Automatischer Versand</text>
-                    <rect x="292" y="44" width="13" height="10" rx="2" fill="none" stroke="var(--steel)" stroke-width="1.3"/>
-                    <path d="M292 45 L298.5 50 L305 45" fill="none" stroke="var(--steel)" stroke-width="1.3"/>
-                    <text x="312" y="53" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Zeiterfassung · Ferienbezug · Pensionskasse</text>
-                    <circle cx="298" cy="72" r="6" fill="none" stroke="var(--ink-muted)" stroke-width="1.3"/>
-                    <line x1="298" y1="69" x2="298" y2="72" stroke="var(--ink-muted)" stroke-width="1.3"/>
-                    <line x1="298" y1="72" x2="301" y2="74" stroke="var(--ink-muted)" stroke-width="1.3"/>
-                    <text x="312" y="76" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-muted)">in fest definierten Zeitabständen</text>
-                    <!-- Lane 2: Feedback-Workflow -->
-                    <text x="0" y="128" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.2" fill="var(--ink-muted)">FEEDBACK-WORKFLOW</text>
-                    <rect x="0.5" y="142.5" width="140" height="40" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="70" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="var(--ink)">Microsoft Forms</text>
-                    <text x="70" y="174" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Bewertung 1–10</text>
-                    <line x1="141" y1="162.5" x2="155" y2="162.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                    <path d="M155 158.5 L162 162.5 L155 166.5 Z" fill="var(--ink-muted)"/>
-                    <path d="M196 134 L226 162.5 L196 191 L166 162.5 Z" fill="#ffffff" stroke="var(--accent)" stroke-width="1.5"/>
-                    <text x="196" y="167" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="var(--ink)">≥ 7/10</text>
-                    <text x="240" y="156" font-family="Inter, sans-serif" font-size="9.5" fill="var(--ink-muted)">ja</text>
-                    <line x1="226" y1="162.5" x2="252" y2="162.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                    <path d="M252 158.5 L259 162.5 L252 166.5 Z" fill="var(--ink-muted)"/>
-                    <rect x="259.5" y="142.5" width="186" height="40" rx="6" fill="var(--graphite)"/>
-                    <text x="352" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#ffffff">Einladung zur Google-Bewertung</text>
-                    <text x="352" y="174" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">der jeweiligen Filiale</text>
-                    <path d="M466 155 L468.4 160.2 L474 160.8 L469.8 164.6 L471 170 L466 167.2 L461 170 L462.2 164.6 L458 160.8 L463.6 160.2 Z" fill="var(--accent)"/>
-                    <text x="202" y="208" font-family="Inter, sans-serif" font-size="9.5" fill="var(--ink-muted)">nein</text>
-                    <line x1="196" y1="191" x2="196" y2="222" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                    <path d="M192 222 L196 229 L200 222 Z" fill="var(--ink-muted)"/>
-                    <rect x="126.5" y="229.5" width="140" height="36" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="196" y="251" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="var(--ink)">Weiterleitung an HR</text>
-                </svg>
-                <figcaption>Anonymisierte Prozessdarstellung</figcaption>
-            </figure>
-            <div class="case-body">
-                <dl class="case-rows">
-                    <div><dt>Ausgangslage</dt><dd>Wichtige Informationen für neue Temporärmitarbeitende — Zeiterfassung, Ferienbezug, Pensionskasse — wurden von den Personalberatern einzeln und manuell verschickt.</dd></div>
-                    <div><dt>Beitrag</dt><dd>Konzeption und Umsetzung einer automatisierten Onboarding-Strecke mit Brevo: Kandidaten werden segmentiert, damit die richtigen Personen die passenden Informationen erhalten — automatisch verschickt in fest definierten Zeitabständen. Ergänzt durch einen Feedback-Workflow mit Microsoft Forms und Power Automate: Bewertungen ab 7 von 10 lösen automatisch eine Einladung zur Google-Bewertung der jeweiligen Filiale aus, kritisches Feedback geht direkt ans HR.</dd></div>
-                    <div><dt>Ergebnis</dt><dd>Personalberater sparen wiederkehrende manuelle Versandarbeit, Temporärmitarbeitende erhalten zuverlässig die richtigen Informationen zum richtigen Zeitpunkt — und gutes Feedback wird systematisch in öffentliche Bewertungen übersetzt.</dd></div>
-                </dl>
-                <p class="case-tools">Brevo · Microsoft Forms · Power Automate</p>
-            </div>
-        </article>
-
-        <!-- Featured Case 2: Power BI -->
-        <article class="case-card case-featured case-featured--alt">
-            <h3>Power-BI-Reporting für interne Entscheidungsgrundlagen</h3>
-            <figure class="case-artifact">
-                <svg viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anonymisierte Darstellung eines Power-BI-Dashboards mit Filterleiste, KPI-Kacheln, Balken- und Liniendiagramm">
-                    <!-- Kopfzeile mit Filtern -->
-                    <text x="0" y="19" font-family="Inter, sans-serif" font-size="12.5" font-weight="700" fill="var(--ink)">Management-Übersicht</text>
-                    <rect x="298.5" y="2.5" width="80" height="22" rx="11" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="338" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Zeitraum ▾</text>
-                    <rect x="386.5" y="2.5" width="70" height="22" rx="11" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="421" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Filiale ▾</text>
-                    <rect x="464.5" y="2.5" width="64" height="22" rx="11" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="496" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="var(--ink-soft)">Team ▾</text>
-                    <!-- KPI-Kacheln -->
-                    <rect x="0.5" y="38.5" width="176" height="64" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="14" y="58" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1" fill="var(--ink-muted)">UMSATZ</text>
-                    <rect x="14" y="68" width="84" height="15" rx="3" fill="var(--ink)"/>
-                    <polyline points="120,90 134,80 148,84 164,70" fill="none" stroke="var(--steel)" stroke-width="2"/>
-                    <rect x="192.5" y="38.5" width="176" height="64" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="206" y="58" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1" fill="var(--ink-muted)">AUSLASTUNG</text>
-                    <rect x="206" y="68" width="68" height="15" rx="3" fill="var(--ink)"/>
-                    <polyline points="312,76 326,86 340,80 356,90" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                    <rect x="384.5" y="38.5" width="176" height="64" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="398" y="58" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1" fill="var(--ink-muted)">MARGE</text>
-                    <rect x="398" y="68" width="76" height="15" rx="3" fill="var(--ink)"/>
-                    <polyline points="504,88 518,82 532,84 548,74" fill="none" stroke="var(--steel)" stroke-width="2"/>
-                    <!-- Balkendiagramm -->
-                    <rect x="0.5" y="116.5" width="264" height="213" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="16" y="140" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="var(--ink)">Umsatz pro Monat</text>
-                    <rect x="24" y="232" width="26" height="64" fill="var(--steel)"/>
-                    <rect x="60" y="204" width="26" height="92" fill="var(--steel)"/>
-                    <rect x="96" y="244" width="26" height="52" fill="var(--steel)"/>
-                    <rect x="132" y="186" width="26" height="110" fill="var(--steel)"/>
-                    <rect x="168" y="218" width="26" height="78" fill="var(--steel)"/>
-                    <rect x="204" y="172" width="26" height="124" fill="var(--ink)"/>
-                    <line x1="16" y1="296.5" x2="248" y2="296.5" stroke="var(--line-strong)"/>
-                    <text x="37" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Jan</text>
-                    <text x="73" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Feb</text>
-                    <text x="109" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Mär</text>
-                    <text x="145" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Apr</text>
-                    <text x="181" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Mai</text>
-                    <text x="217" y="312" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-muted)">Jun</text>
-                    <!-- Liniendiagramm -->
-                    <rect x="280.5" y="116.5" width="279" height="213" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                    <text x="296" y="140" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="var(--ink)">Auslastung</text>
-                    <rect x="442" y="131" width="8" height="8" fill="var(--steel)"/>
-                    <text x="455" y="139" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-soft)">aktuell</text>
-                    <rect x="496" y="131" width="8" height="8" fill="var(--line-strong)"/>
-                    <text x="509" y="139" font-family="Inter, sans-serif" font-size="9" fill="var(--ink-soft)">Vorjahr</text>
-                    <line x1="296" y1="180" x2="544" y2="180" stroke="var(--line)"/>
-                    <line x1="296" y1="230" x2="544" y2="230" stroke="var(--line)"/>
-                    <line x1="296" y1="280" x2="544" y2="280" stroke="var(--line)"/>
-                    <polyline points="296,278 340,268 384,272 428,250 472,256 516,238 544,242" fill="none" stroke="var(--line-strong)" stroke-width="2"/>
-                    <polyline points="296,268 340,248 384,256 428,212 472,220 516,176 544,168" fill="none" stroke="var(--steel)" stroke-width="2.5"/>
-                    <rect x="424" y="208" width="8" height="8" fill="var(--steel)"/>
-                    <rect x="512" y="172" width="8" height="8" fill="var(--steel)"/>
-                    <rect x="540" y="164" width="8" height="8" fill="var(--accent)"/>
-                </svg>
-                <figcaption>Anonymisierte Darstellung</figcaption>
-            </figure>
-            <div class="case-body">
-                <dl class="case-rows">
-                    <div><dt>Ausgangslage</dt><dd>Entscheidungsrelevante Kennzahlen lagen verteilt in Excel-Listen und Einzelsystemen und mussten manuell zusammengetragen werden.</dd></div>
-                    <div><dt>Beitrag</dt><dd>Aufbau und Weiterentwicklung von Power-BI-Reports: Datenmodell, KPI-Definition gemeinsam mit den Fachbereichen und ein Dashboard-Design, das ohne Erklärung verständlich ist.</dd></div>
-                    <div><dt>Ergebnis</dt><dd>Mehrere interne Reports bündeln heute Kennzahlen, die zuvor manuell zusammengetragen wurden — als gemeinsame, stets aktuelle Entscheidungsgrundlage für Management und Fachbereiche.</dd></div>
-                </dl>
-                <p class="case-tools">Power BI · Excel · Microsoft 365</p>
-            </div>
-        </article>
-
-        <div class="case-grid">
-            <article class="case-card case-card--small">
-                <h3>Microsoft-365-Prozessverbesserung für Zusammenarbeit und Ablage</h3>
-                <figure class="case-artifact">
-                    <svg viewBox="0 0 560 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prozessgrafik: Anfrage, SharePoint-Struktur, Teams-Kanal, Standardprozess">
-                        <rect x="0.5" y="28.5" width="118" height="54" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                        <text x="59" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="var(--ink)">Anfrage</text>
-                        <line x1="119" y1="55.5" x2="140" y2="55.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                        <path d="M140 51 L147 55.5 L140 60 Z" fill="var(--ink-muted)"/>
-                        <rect x="147.5" y="28.5" width="118" height="54" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                        <text x="206" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">SharePoint-</text>
-                        <text x="206" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Struktur</text>
-                        <line x1="266" y1="55.5" x2="287" y2="55.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                        <path d="M287 51 L294 55.5 L287 60 Z" fill="var(--ink-muted)"/>
-                        <rect x="294.5" y="28.5" width="118" height="54" rx="6" fill="#ffffff" stroke="var(--line-strong)"/>
-                        <text x="353" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="var(--ink)">Teams-Kanal</text>
-                        <line x1="413" y1="55.5" x2="434" y2="55.5" stroke="var(--ink-muted)" stroke-width="1.5"/>
-                        <path d="M434 51 L441 55.5 L434 60 Z" fill="var(--ink-muted)"/>
-                        <rect x="441.5" y="28.5" width="118" height="54" rx="6" fill="var(--graphite)"/>
-                        <text x="500" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#ffffff">Standard-</text>
-                        <text x="500" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#ffffff">prozess</text>
-                        <rect x="0" y="14" width="8" height="8" fill="var(--accent)"/>
-                    </svg>
-                    <figcaption>Schematische Darstellung</figcaption>
-                </figure>
-                <dl class="case-rows case-rows--stacked">
-                    <div><dt>Ausgangslage</dt><dd>Gewachsene Ablage- und Teamstrukturen in Microsoft 365 führten zu Doppelablagen, Parallelversionen und Suchaufwand.</dd></div>
-                    <div><dt>Beitrag</dt><dd>Analyse der bestehenden Strukturen, Konzeption klarer Ablage- und Zusammenarbeitsregeln in SharePoint und Teams, Begleitung der Mitarbeitenden bei der Umstellung.</dd></div>
-                    <div><dt>Ergebnis</dt><dd>Wiederkehrende manuelle Ablagearbeit ist reduziert — Teams finden Dokumente in einer Struktur, die im Alltag tatsächlich genutzt wird.</dd></div>
-                </dl>
-                <p class="case-tools">SharePoint · Teams · Power Automate</p>
-            </article>
-
-            <article class="case-card case-card--small">
-                <h3>CMS-Migration auf die neue Umbraco-Version an der ZHAW</h3>
-                <figure class="case-artifact">
-                    <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anonymisierte Darstellung eines CMS-Admin-Bereichs mit Seitenbaum und Inhaltsbereich">
-                        <rect x="0.5" y="0.5" width="559" height="259" rx="8" fill="#ffffff" stroke="var(--line-strong)"/>
-                        <line x1="0.5" y1="32.5" x2="559.5" y2="32.5" stroke="var(--line-strong)"/>
-                        <rect x="14" y="11" width="10" height="10" fill="var(--accent)"/>
-                        <text x="32" y="21" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="var(--ink)">CMS · Umbraco</text>
-                        <rect x="330.5" y="8.5" width="110" height="16" rx="8" fill="var(--paper)" stroke="var(--line)"/>
-                        <rect x="452.5" y="7.5" width="92" height="18" rx="9" fill="none" stroke="var(--accent)"/>
-                        <text x="498" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="var(--accent-dark)">neue Version</text>
-                        <line x1="150.5" y1="32.5" x2="150.5" y2="259.5" stroke="var(--line)"/>
-                        <text x="16" y="56" font-family="Inter, sans-serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="var(--ink-muted)">SEITEN</text>
-                        <polyline points="14,72 17,76 23,67" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="77" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Startseite</text>
-                        <polyline points="14,96 17,100 23,91" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="101" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Beratung</text>
-                        <polyline points="14,120 17,124 23,115" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="125" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Workshops</text>
-                        <polyline points="14,144 17,148 23,139" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="149" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Events</text>
-                        <polyline points="14,168 17,172 23,163" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="173" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Downloads</text>
-                        <polyline points="14,192 17,196 23,187" fill="none" stroke="var(--steel)" stroke-width="1.8"/>
-                        <text x="30" y="197" font-family="Inter, sans-serif" font-size="11" fill="var(--ink)">Kontakt</text>
-                        <rect x="166" y="48" width="120" height="6" rx="3" fill="var(--line-strong)"/>
-                        <rect x="166" y="66" width="220" height="13" rx="3" fill="var(--ink)"/>
-                        <rect x="166" y="92" width="360" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="166" y="108" width="330" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="166" y="124" width="300" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="166.5" y="144.5" width="170" height="68" rx="4" fill="var(--paper)" stroke="var(--line)"/>
-                        <rect x="352" y="152" width="174" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="352" y="168" width="150" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="352" y="184" width="162" height="7" rx="3.5" fill="var(--line)"/>
-                        <rect x="166.5" y="226.5" width="112" height="22" rx="5" fill="var(--graphite)"/>
-                        <text x="222" y="241" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#ffffff">Veröffentlichen</text>
-                    </svg>
-                    <figcaption>Anonymisierte Darstellung</figcaption>
-                </figure>
-                <dl class="case-rows case-rows--stacked">
-                    <div><dt>Ausgangslage</dt><dd>Die Website der Career Services lief auf einer veralteten Umbraco-Version — der Wechsel auf die neue Version stand an, umzusetzen mit einem externen Dienstleister.</dd></div>
-                    <div><dt>Beitrag</dt><dd>Koordination der Migration mit dem externen Dienstleister und Aufbau sämtlicher statischer Seiten im neuen CMS — von der Inhaltsstruktur bis zum fertigen Frontend.</dd></div>
-                    <div><dt>Ergebnis</dt><dd>Alle statischen Seiten stehen vollständig aufgebaut im neuen Umbraco — die Umstellung verlief koordiniert zwischen Fachbereich und Dienstleister.</dd></div>
-                </dl>
-                <p class="case-tools">Umbraco · CMS · Dienstleister-Koordination</p>
-            </article>
-
-            <article class="case-card case-card--small">
-                <h3>Operations-Erfahrung als Basis für strukturierte Prozessarbeit</h3>
-                <figure class="case-artifact">
-                    <svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Checkliste: Lage erfassen und priorisieren, klar kommunizieren, Sonderfall sauber abwickeln, Übergabe dokumentieren">
-                        <rect x="0.5" y="0.5" width="559" height="239" rx="8" fill="#ffffff" stroke="var(--line-strong)"/>
-                        <text x="24" y="40" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="var(--ink)">Ablauf im Ausnahmefall</text>
-                        <line x1="24" y1="54" x2="536" y2="54" stroke="var(--line)"/>
-                        <rect x="24" y="74" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
-                        <polyline points="28,83 32,88 39,77" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                        <text x="56" y="88" font-family="Inter, sans-serif" font-size="13" fill="var(--ink-soft)">Lage erfassen und priorisieren</text>
-                        <rect x="24" y="114" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
-                        <polyline points="28,123 32,128 39,117" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                        <text x="56" y="128" font-family="Inter, sans-serif" font-size="13" fill="var(--ink-soft)">Klar und früh kommunizieren</text>
-                        <rect x="24" y="154" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
-                        <polyline points="28,163 32,168 39,157" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
-                        <text x="56" y="168" font-family="Inter, sans-serif" font-size="13" fill="var(--ink-soft)">Sonderfall sauber abwickeln</text>
-                        <rect x="24" y="194" width="18" height="18" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
-                        <text x="56" y="208" font-family="Inter, sans-serif" font-size="13" fill="var(--ink-soft)">Übergabe dokumentieren</text>
-                    </svg>
-                    <figcaption>Arbeitsprinzip aus dem Operations-Alltag</figcaption>
-                </figure>
-                <dl class="case-rows case-rows--stacked">
-                    <div><dt>Ausgangslage</dt><dd>Flughafenbetrieb und militärische Führung: Umgebungen, in denen Ausnahmen der Normalfall sind und Fehler sofort sichtbar werden.</dd></div>
-                    <div><dt>Beitrag</dt><dd>Priorisieren unter Zeitdruck, klare Kommunikation und sauberer Umgang mit Sonderfällen — über Jahre im Echtbetrieb trainiert.</dd></div>
-                    <div><dt>Ergebnis</dt><dd>Diese Arbeitsweise prägt meine Prozessanalyse: realistische Annahmen, durchdachte Ausnahmebehandlung, verständliche Kommunikation.</dd></div>
-                </dl>
-                <p class="case-tools">Swissport · Schweizer Armee</p>
-            </article>
-        </div>
+<section class="chapter chapter--blue" id="kontakt" aria-labelledby="h-kontakt" data-fill>
+  <span class="fill-ink" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="opener">
+      <span class="opener__no" aria-hidden="true">5</span>
+      <h2 id="h-kontakt">Kontakt</h2>
+      <a class="magnet" href="mailto:joelcontiero@gmail.com"><span>E-Mail<br>schreiben →</span></a>
     </div>
-</section>
-
-<!-- ========== ÜBER MICH ========== -->
-<section id="about">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Über mich</div>
-            <h2 class="s-title">Vom Echtbetrieb zur Prozessanalyse</h2>
-        </div>
-
-        <div class="about-grid">
-            <div class="about-story">
-                <p>
-                    Ich komme aus Umgebungen, in denen Genauigkeit, Tempo und Verantwortung zählen:
-                    Fahrzeugdiagnose in der Werkstatt, Passagierdienst am Flughafen Zürich und
-                    Führungsverantwortung als Unteroffizier. Heute übertrage ich diese Arbeitsweise
-                    in IT-Prozesse: Requirements Engineering, Power BI und Microsoft-365-Automatisierung.
-                </p>
-                <p>
-                    Aktuell arbeite ich als <strong>Business Analyst IT &amp; Prozesse</strong> bei der
-                    Work Selection AG und unterstütze daneben die Career Services der ZHAW im Bereich
-                    CRM und Web Content — parallel zum Teilzeitstudium Wirtschaftsinformatik mit
-                    Schwerpunkt Data Science.
-                </p>
-                <ul class="about-strengths">
-                    <li>Schnittstelle zwischen Management, Anwendern und IT</li>
-                    <li>Pragmatische Hands-on-Mentalität</li>
-                    <li>Datenmodellierung und Dashboard-Design in Power BI</li>
-                    <li>Konzeption strukturierter digitaler Workflows</li>
-                </ul>
-            </div>
-
-            <div class="about-facts">
-                <h3>Auf einen Blick</h3>
-                <dl class="facts-list">
-                    <div><dt>Standort</dt><dd>Schlieren, Zürich</dd></div>
-                    <div><dt>Rolle</dt><dd>Business Analyst IT &amp; Prozesse, Work Selection AG</dd></div>
-                    <div><dt>Studium</dt><dd>BSc Wirtschaftsinformatik (Data Science), ZHAW, Teilzeit</dd></div>
-                    <div><dt>Sprachen</dt><dd>Deutsch (Muttersprache) · Englisch (C1) · Französisch (Grundkenntnisse)</dd></div>
-                    <div><dt>Tools</dt><dd>Power BI · Microsoft 365 · SharePoint · Power Automate</dd></div>
-                    <div><dt>Offen für</dt><dd>Junior-BA-, Prozess- und Data-Rollen</dd></div>
-                </dl>
-            </div>
-        </div>
-
-        <!-- Stationen als horizontale Journey -->
-        <ol class="journey">
-            <li>
-                <span class="j-year">2018</span>
-                <span class="j-label">Werkstatt</span>
-                <span class="j-sub">AMAG / Emil Frey</span>
-            </li>
-            <li>
-                <span class="j-year">2022</span>
-                <span class="j-label">Militärische Führung</span>
-                <span class="j-sub">Schweizer Armee</span>
-            </li>
-            <li>
-                <span class="j-year">2023</span>
-                <span class="j-label">Flughafenbetrieb</span>
-                <span class="j-sub">Swissport, Flughafen Zürich</span>
-            </li>
-            <li>
-                <span class="j-year">2025</span>
-                <span class="j-label">Business Analyse &amp; Studium</span>
-                <span class="j-sub">Work Selection / ZHAW</span>
-            </li>
-        </ol>
+    <div class="chapter__body contact-grid">
+      <div>
+        <p class="lead-serif">Für Stellen als Business Analyst, Data Analyst oder im IT-Consulting, für Projektanfragen oder einen fachlichen Austausch. Am einfachsten per E-Mail.</p>
+        <p class="copy-wrap"><button class="copy" type="button" data-copy="joelcontiero@gmail.com" aria-describedby="copy-hint">joelcontiero@gmail.com<span class="stamp" aria-hidden="true">KOPIERT</span></button><span class="copy-hint" id="copy-hint">Klick kopiert die Adresse</span><span class="sr-only" role="status" aria-live="polite"></span></p>
+        <div class="actions" style="margin-top:32px"><a class="btn btn--white" href="assets/docs/Joel_Contiero_CV.pdf" download><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M3 14h10"/></svg> CV herunterladen (PDF)</a></div>
+      </div>
+      <nav class="channels" aria-label="Kontaktwege">
+        <a href="tel:+41763417041"><span class="k">Telefon</span><span class="v">+41 76 341 70 41</span><span class="a">Anrufen →</span></a>
+        <a href="https://www.linkedin.com/in/joel-contiero-0549141a2"><span class="k">LinkedIn</span><span class="v">joel-contiero</span><span class="a">Profil auf LinkedIn <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="M6 3h7v7M13 3 4 12"/></svg></span></a>
+        <a href="https://github.com/JoelContiero"><span class="k">GitHub</span><span class="v">JoelContiero</span><span class="a">Profil auf GitHub <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="display:inline;vertical-align:-1px"><path d="M6 3h7v7M13 3 4 12"/></svg></span></a>
+      </nav>
     </div>
-</section>
-
-<!-- ========== ERFAHRUNG ========== -->
-<section id="experience" class="band">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Berufliche Erfahrung</div>
-            <h2 class="s-title">Mein Weg</h2>
-        </div>
-
-        <div class="avail-panel">
-            <div><span class="avail-label">Offen für</span> Junior Business Analyst · Prozess-/Data-Analyst · Projektmitarbeit</div>
-            <div><span class="avail-label">Standort</span> Zürich · hybrid möglich</div>
-            <div><span class="avail-label">Kontakt</span> <a href="mailto:joelcontiero@gmail.com">joelcontiero@gmail.com</a></div>
-        </div>
-
-        <div class="timeline">
-            <div class="tl-year">2025</div>
-
-            <!-- Work Selection -->
-            <div class="tl-item">
-                <div class="tl-dot live"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Business Analyst IT &amp; Prozesse</div>
-                        <span class="tl-period">Nov 2025 – heute</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo"><img src="assets/work_selection_logo.svg" alt="Work Selection Logo"></span>
-                        <span class="tl-company">Work Selection AG · Baden AG</span>
-                    </div>
-                    <p class="tl-context">
-                        Als Bindeglied zwischen Fachbereichen, Management und externen IT-Dienstleistern
-                        übersetze ich Anforderungen in konkrete Prozess- und Reporting-Lösungen.
-                    </p>
-                    <ul class="tl-bullets">
-                        <li>Analyse von Anforderungen in IT, Prozess und Reporting</li>
-                        <li>Aufbau und Optimierung von Power-BI-Reports sowie Microsoft 365 / SharePoint / Teams</li>
-                        <li>Automatisierung des Onboardings für Temporärmitarbeitende mit Brevo, Microsoft Forms und Power Automate</li>
-                        <li>Weiterentwicklung interner Abläufe und pragmatische Prozessverbesserungen</li>
-                        <li>Beratung und Unterstützung von Mitarbeitenden bei digitalen Tools und neuen Arbeitsweisen</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- ZHAW CRM -->
-            <div class="tl-item">
-                <div class="tl-dot live"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Studentische Hilfskraft CRM &amp; Web Content</div>
-                        <span class="tl-period">Nov 2025 – heute</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo tl-logo--square"><img src="assets/zhaw_logo.svg" alt="ZHAW Logo"></span>
-                        <span class="tl-company">ZHAW School of Management and Law · Winterthur ZH</span>
-                    </div>
-                    <p class="tl-context">
-                        Neben dem Studium unterstütze ich die Career Services bei CRM- und Web-Themen —
-                        von der technischen Abklärung bis zur Umsetzung mit externen Dienstleistern.
-                    </p>
-                    <ul class="tl-bullets">
-                        <li>Koordination der Migration auf die neue Umbraco-Version und Aufbau der statischen Seiten</li>
-                        <li>Technische Abklärungen und Koordination mit externen Dienstleistern bei CRM- und Website-Anpassungen</li>
-                        <li>Pflege und Weiterentwicklung von CRM- und CMS-Inhalten für die Career Services</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tl-year">2023</div>
-
-            <!-- Swissport -->
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Luftverkehrsangestellter im Passagierdienst</div>
-                        <span class="tl-period">Nov 2023 – Aug 2025</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo"><img src="assets/swissport_logo.svg" alt="Swissport Logo"></span>
-                        <span class="tl-company">Swissport International AG · Flughafen Zürich</span>
-                    </div>
-                    <p class="tl-context">
-                        Bei Swissport habe ich gelernt, unter Zeitdruck klar zu kommunizieren, zu priorisieren
-                        und mit Ausnahmen sauber umzugehen. Diese Operations-Erfahrung prägt heute meine
-                        Prozessanalyse und Stakeholder-Kommunikation.
-                    </p>
-                    <ul class="tl-bullets">
-                        <li>Kundenbetreuung im Check-in und Gate-Bereich in einem international geprägten Umfeld</li>
-                        <li>Unterstützung bei Flugunregelmässigkeiten und Boardingprozessen unter Zeitdruck</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tl-year">2022</div>
-
-            <!-- Armee -->
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Übermittlungssoldat / Unteroffizier</div>
-                        <span class="tl-period">Jul 2022 – Mai 2023</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo tl-logo--army"><img src="assets/army_logo.png" alt="Schweizer Armee Logo"></span>
-                        <span class="tl-company">Schweizer Armee · Bière VD</span>
-                    </div>
-                    <p class="tl-context">
-                        Als Unteroffizier habe ich früh Verantwortung für Menschen und Material übernommen —
-                        Führung heisst hier: planen, klar kommunizieren und unter Druck strukturiert bleiben.
-                    </p>
-                    <ul class="tl-bullets">
-                        <li>Führung, Organisation und Koordination innerhalb einer militärischen Einheit</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tl-year">2018</div>
-
-            <!-- AMAG / Emil Frey -->
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Automobil-Fachmann EFZ</div>
-                        <span class="tl-period">Aug 2018 – Dez 2022</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo tl-logo--amag"><img src="assets/amag_logo.svg" alt="AMAG Logo"></span>
-                        <span class="tl-logo"><img src="assets/emil_frey_logo.svg" alt="Emil Frey Logo"></span>
-                        <span class="tl-company">AMAG Schlieren ZH / Emil Frey AG · Altstetten ZH</span>
-                    </div>
-                    <p class="tl-context">
-                        In der Werkstatt zählt systematische Fehlersuche: Symptom, Diagnose, Massnahme.
-                        Dieselbe Denkweise nutze ich heute bei der Analyse von Prozessen und Daten.
-                    </p>
-                    <ul class="tl-bullets">
-                        <li>Diagnose, Reparatur und Wartung von Personenwagen und leichten Nutzfahrzeugen</li>
-                        <li>Präzises Arbeiten nach Herstellervorgaben und Sicherheitsstandards</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== AUSBILDUNG ========== -->
-<section id="education">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Ausbildung</div>
-            <h2 class="s-title">Bildungsweg</h2>
-        </div>
-
-        <div class="timeline">
-            <div class="tl-item">
-                <div class="tl-dot live"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">BSc Wirtschaftsinformatik · Schwerpunkt Data Science</div>
-                        <span class="tl-period">Sep 2025 – Aug 2029</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo tl-logo--square"><img src="assets/zhaw_logo.svg" alt="ZHAW Logo"></span>
-                        <span class="tl-company">ZHAW School of Management and Law · Winterthur ZH</span>
-                    </div>
-                    <ul class="tl-bullets">
-                        <li>Teilzeitstudium mit Fokus auf IT-Management, digitale Transformation und Business Analytics</li>
-                        <li>Schwerpunkt Data Science: Machine Learning, Datenmodellierung, statistische Analyse</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Berufsmaturität 2 · Wirtschaft &amp; Dienstleistungen</div>
-                        <span class="tl-period">Aug 2024 – Jul 2025</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo"><img src="assets/juventus_logo.svg" alt="Juventus Schulen Logo"></span>
-                        <span class="tl-company">Juventus Maturitätsschule · Zürich</span>
-                    </div>
-                    <ul class="tl-bullets">
-                        <li>Abschlussnote <strong>5.3</strong></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tl-item">
-                <div class="tl-dot"></div>
-                <div class="tl-card">
-                    <div class="tl-head">
-                        <div class="tl-title">Automobil-Fachmann EFZ (Lehre)</div>
-                        <span class="tl-period">Aug 2018 – Jul 2021</span>
-                    </div>
-                    <div class="tl-company-row">
-                        <span class="tl-logo tl-logo--amag"><img src="assets/amag_logo.svg" alt="AMAG Logo"></span>
-                        <span class="tl-company">AMAG Schlieren · Kanton Zürich</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== SKILLS (KOMPETENZMATRIX) ========== -->
-<section id="skills" class="band">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Kenntnisse</div>
-            <h2 class="s-title">Kompetenzmatrix</h2>
-        </div>
-
-        <div class="matrix-wrap">
-            <table class="skills-matrix">
-                <thead>
-                    <tr>
-                        <th scope="col">Kompetenz</th>
-                        <th scope="col">Anwendung</th>
-                        <th scope="col">Kontext</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="core">
-                        <td data-label="Kompetenz">Business Analyse &amp; Requirements</td>
-                        <td data-label="Anwendung">Anforderungen aufnehmen, strukturieren und in User Stories übersetzen</td>
-                        <td data-label="Kontext">Schnittstelle Fachbereich ↔ IT</td>
-                    </tr>
-                    <tr class="core">
-                        <td data-label="Kompetenz">Power BI</td>
-                        <td data-label="Anwendung">Datenmodellierung, DAX, KPI-Definition, Dashboard-Design</td>
-                        <td data-label="Kontext">Interne Reports &amp; Entscheidungsgrundlagen</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">Microsoft 365</td>
-                        <td data-label="Anwendung">SharePoint, Teams, Exchange, OneDrive — Strukturen &amp; Zusammenarbeit</td>
-                        <td data-label="Kontext">Ablage &amp; interne Prozesse</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">Automatisierung &amp; Workflows</td>
-                        <td data-label="Anwendung">Power Automate, Microsoft Forms, Brevo — automatisierte Abläufe und E-Mail-Strecken</td>
-                        <td data-label="Kontext">Onboarding &amp; interne Prozesse</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">Prozessoptimierung</td>
-                        <td data-label="Anwendung">Abläufe analysieren, vereinfachen und dokumentieren</td>
-                        <td data-label="Kontext">Operations &amp; Verwaltung</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">CRM &amp; CMS</td>
-                        <td data-label="Anwendung">Administration, Content-Pflege, Umbraco-Migration, Koordination externer Dienstleister</td>
-                        <td data-label="Kontext">ZHAW Career Services</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">Datenanalyse &amp; Data Science</td>
-                        <td data-label="Anwendung">Statistische Analyse, Datenmodellierung, Machine-Learning-Grundlagen</td>
-                        <td data-label="Kontext">ZHAW-Schwerpunkt Data Science</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">KI-Werkzeuge</td>
-                        <td data-label="Anwendung">ChatGPT, Claude Code, Microsoft Copilot — Prototyping, Dokumentation, Analyse</td>
-                        <td data-label="Kontext">Tägliche Arbeitspraxis, klare Leitplanken</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Kompetenz">Führung &amp; Kommunikation</td>
-                        <td data-label="Anwendung">Priorisieren unter Zeitdruck, klare Übergaben, Verantwortung übernehmen</td>
-                        <td data-label="Kontext">Armee &amp; Flughafenbetrieb</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <p class="skills-methods">Methoden &amp; Arbeitsweise: Scrum · Kanban · Stakeholder Management · Hands-on-Mentalität</p>
-    </div>
-</section>
-
-<!-- ========== KI IN MEINER ARBEITSWEISE ========== -->
-<section id="ai">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Arbeitsweise</div>
-            <h2 class="s-title">KI in meiner Arbeitsweise</h2>
-        </div>
-
-        <div class="ai-grid">
-            <div class="ai-intro">
-                <p>
-                    KI ist bei mir Werkzeug, nicht Selbstzweck. Ich setze sie dort ein, wo sie
-                    Analyse- und Prozessarbeit konkret beschleunigt — mit klaren Leitplanken.
-                </p>
-                <p class="ai-tools-line">
-                    Im Einsatz: ChatGPT, Claude Code und Microsoft Copilot — ergänzt durch
-                    Gemini und NotebookLM für Recherche und Dokumentenanalyse.
-                </p>
-            </div>
-
-            <ul class="ai-usecases">
-                <li>Anforderungen strukturieren und aus Meetings in klare User Stories übersetzen</li>
-                <li>Power-BI-, Excel- und DAX-Ideen schneller prototypisieren</li>
-                <li>Dokumente zusammenfassen, prüfen und für Stakeholder verständlich machen</li>
-                <li>Automatisierungsideen testen, bevor sie produktiv umgesetzt werden</li>
-                <li class="ai-guardrail">Datenschutz, Quellenprüfung und menschliche Kontrolle als feste Leitplanken</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- ========== ARBEITSPRINZIPIEN ========== -->
-<section id="prinzipien" class="band-dark">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Arbeitsprinzipien</div>
-            <h2 class="s-title">Drei Grundsätze</h2>
-        </div>
-
-        <ol class="principles">
-            <li>
-                <span class="p-num">01</span>
-                <p>Erst den Prozess verstehen, dann digitalisieren.</p>
-            </li>
-            <li>
-                <span class="p-num">02</span>
-                <p>Tools sind nur gut, wenn sie im Alltag genutzt werden.</p>
-            </li>
-            <li>
-                <span class="p-num">03</span>
-                <p>Daten müssen Entscheidungen einfacher machen.</p>
-            </li>
-        </ol>
-    </div>
-</section>
-
-<!-- ========== KONTAKT ========== -->
-<section id="contact" class="band">
-    <div class="section-wrap">
-        <div class="section-head">
-            <div class="s-label">Kontakt</div>
-            <h2 class="s-title">In Verbindung treten</h2>
-        </div>
-
-        <div class="contact-layout">
-            <p class="contact-info-text">
-                Ich freue mich über Stellenangebote, Projektanfragen oder einen fachlichen Austausch
-                zu Business Analyse, Daten und Prozessen. Am schnellsten erreichen Sie mich per E-Mail.
-            </p>
-
-            <div class="contact-cv-row">
-                <a href="assets/Joel_Contiero_CV.pdf" download class="btn-primary">CV herunterladen (PDF)</a>
-            </div>
-
-            <div class="contact-methods">
-                <a href="mailto:joelcontiero@gmail.com" class="contact-method-card">
-                    <span class="contact-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    </span>
-                    <span class="contact-details">
-                        <span class="contact-label">E-Mail</span>
-                        <span class="contact-value">joelcontiero@gmail.com</span>
-                    </span>
-                </a>
-                <a href="tel:+41763417041" class="contact-method-card">
-                    <span class="contact-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    </span>
-                    <span class="contact-details">
-                        <span class="contact-label">Telefon</span>
-                        <span class="contact-value">+41 76 341 70 41</span>
-                    </span>
-                </a>
-                <a href="https://www.linkedin.com/in/joel-contiero-0549141a2" target="_blank" rel="noopener noreferrer" class="contact-method-card">
-                    <span class="contact-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v2.5"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                    </span>
-                    <span class="contact-details">
-                        <span class="contact-label">LinkedIn</span>
-                        <span class="contact-value">joel-contiero</span>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
+    <p class="colophon">Stand Oktober 2026 · Kein Tracking, keine Cookies · <a href="datenschutz/">Datenschutz</a></p>
+  </div>
 </section>
 
 </main>
-
-<!-- ========== FOOTER ========== -->
-<footer>
-    <div class="footer-text">
-        Gestaltet und umgesetzt von <span>Joel Contiero</span> · Zürich · 2026
-    </div>
-</footer>
-
-<script src="script.js" defer></script>
-
+<script src="assets/js/main.js?v=9891378a" defer></script>
 </body>
 </html>

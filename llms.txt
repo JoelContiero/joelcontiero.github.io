@@ -1,0 +1,29 @@
+# Joel Contiero
+
+> Joel Contiero ist Business Analyst IT & Prozesse und studiert Wirtschaftsinformatik (BSc, Schwerpunkt Data Science) an der ZHAW School of Management and Law in Winterthur. Er wohnt in Schlieren bei Zürich.
+
+Joel Contiero arbeitet seit November 2025 als Business Analyst IT & Prozesse bei der Work Selection AG in Baden, Schweiz. Er arbeitet mit Requirements Engineering, Prozessanalyse, Power BI und Microsoft 365 und leistet 1st- und 2nd-Level-IT-Support.
+Daneben ist er studentische Hilfskraft für CRM und Web Content bei den Career Services der ZHAW.
+Zuvor war er Luftverkehrsangestellter bei Swissport am Flughafen Zürich, Unteroffizier in der Schweizer Armee und Automobil-Fachmann EFZ bei AMAG und Emil Frey.
+Er setzt Daten- und Automatisierungsprojekte mit KI-Werkzeugen wie Claude Code und Codex um. Den Code schreibt die KI nach seinen Vorgaben; er legt Fragestellung, Datenquellen und Regeln fest und prüft die Ergebnisse.
+Sprachen: Deutsch (Muttersprache), Englisch (C1), Französisch (Grundkenntnisse).
+Offen für Stellen als Business Analyst, Data Analyst oder im IT-Consulting.
+
+## Projekte
+
+- [Firmen-Score](https://joelcontiero.github.io/projekte/firmen-score/): Bewertet die finanzielle Gesundheit börsennotierter US-Firmen aus ihren öffentlichen SEC-Berichten. Der Code rechnet die Kennzahlen, die KI liest nur die Texte. Warum: Ich wollte die Auswahl von Investitionsmöglichkeiten an der Börse vereinfachen: auf einen Blick sehen, welche Firmen finanziell gesund sind und wo es Warnzeichen gibt, statt Geschäftsberichte einzeln zu lesen. Ergebnis: Eine Web-App mit rund 1'400 bewerteten US-Firmen, täglich aktualisiert. Rückgerechnet seit 2016 stürzten Firmen mit tiefem Score gut zweieinhalbmal so oft ab (47 % gegenüber 18 %).
+- [Job-Radar](https://joelcontiero.github.io/projekte/job-radar/): Sammelt jeden Abend neue Stelleninserate, filtert sie per Code vor, lässt die KI die Passung bewerten und meldet die besten Treffer. Warum: Ich suche gezielt Stellen an der Schnittstelle zwischen IT, Daten und Fachbereich. Täglich kommen viele Inserate, nur wenige passen. Das Vorsortieren wollte ich nicht mehr von Hand machen. Ergebnis: Jeden Abend genau eine Nachricht mit den passenden Stellen. Jede Bewertung der KI lässt sich mit meinem eigenen Urteil vergleichen.
+- [Mietpreise Schweiz](https://joelcontiero.github.io/projekte/mietpreise/): Analyse mit offenen Daten des Bundesamts für Statistik: Mieten im Vergleich zu Löhnen und Teuerung, und nach Kanton. Warum: Steigende Mieten sind in der Schweiz ein Dauerthema, besonders im Raum Zürich. Ich wollte mit offiziellen Zahlen prüfen, was davon stimmt. Ergebnis: Mieten 2010–2020 +8,2 %, Reallöhne +8,7 %: Die Löhne hielten Schritt. Zürich liegt beim Niveau auf Rang 2 und beim Anstieg auf Rang 3.
+- Mail-Sortierer (Eigenes Projekt · Automatisierung · KI): Sortiert mein Gmail-Postfach automatisch in Ordner. Ist sich die KI unsicher, bleibt die Mail im Posteingang. Es wird nie etwas gelöscht. Ergebnis: Das Postfach sortiert sich jeden Abend selbst: Eingangsbestätigungen, Absagen und Einladungen in eigene Ordner, Mails mit Handlungsbedarf separat.
+- Automatisiertes Onboarding (Arbeitsprojekt · Prozessautomatisierung): Konzept und Umsetzung einer automatisierten Informationsstrecke für neue Temporärmitarbeitende, ergänzt um einen automatischen Feedback-Ablauf. Ergebnis: Weniger manuelle Arbeit im Team. Neue Mitarbeitende erhalten zuverlässig die richtigen Informationen, und Feedback fliesst systematisch zurück.
+- Power-BI-Reporting (Arbeitsprojekt · Reporting): Aufbau und Weiterentwicklung von Power-BI-Reports, gemeinsam mit den Fachbereichen. Ergebnis: Eine gemeinsame, aktuelle Entscheidungsgrundlage für Management und Fachbereiche.
+- Ablage in Microsoft 365 (Arbeitsprojekt · Prozesse): Analyse und Neuordnung der Ablage- und Zusammenarbeitsstruktur, inklusive Begleitung der Umstellung. Ergebnis: Eine Struktur, die im Alltag genutzt wird, und weniger Suchaufwand.
+- CMS-Migration (Arbeitsprojekt · Hochschule · Web): Koordination einer Website-Migration mit einem externen Dienstleister und Aufbau der Inhalte im neuen System. Ergebnis: Die Website läuft vollständig auf der neuen Version. Die Umstellung lief abgestimmt zwischen Fachbereich und Dienstleister.
+
+## Links
+
+- [Website](https://joelcontiero.github.io/)
+- [CV als PDF](https://joelcontiero.github.io/assets/docs/Joel_Contiero_CV.pdf)
+- [LinkedIn](https://www.linkedin.com/in/joel-contiero-0549141a2)
+- [GitHub](https://github.com/JoelContiero)
+- [Datenschutz](https://joelcontiero.github.io/datenschutz/)
