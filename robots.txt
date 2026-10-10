@@ -1,41 +1,11 @@
-# Suchmaschinen und KI-Assistenten sind willkommen.
+# Diese Seite soll nicht in Suchmaschinen oder KI-Antworten erscheinen.
+# Google und Bing dürfen die Seiten abrufen, damit sie die noindex-Anweisung sehen.
 
-User-agent: *
-Allow: /
-Disallow: /_vorlagen/
-Disallow: /tweak/
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
+User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://joelcontiero.github.io/sitemap.xml
+User-agent: *
+Disallow: /
